@@ -17,6 +17,7 @@
 		16E3E3A8254BF57D00E53A5E /* CoreDataTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3E3A7254BF57D00E53A5E /* CoreDataTestUITests.swift */; };
 		16E3E3BD254C030400E53A5E /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3E3BB254C030400E53A5E /* Order+CoreDataClass.swift */; };
 		16E3E3BE254C030400E53A5E /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3E3BC254C030400E53A5E /* Order+CoreDataProperties.swift */; };
+		16E3E3C9254C100700E53A5E /* OrderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3E3C8254C100700E53A5E /* OrderSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		16E3E3A9254BF57D00E53A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16E3E3BB254C030400E53A5E /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
 		16E3E3BC254C030400E53A5E /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		16E3E3C8254C100700E53A5E /* OrderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				16E3E385254BF57A00E53A5E /* CoreDataTestApp.swift */,
 				16E3E387254BF57A00E53A5E /* ContentView.swift */,
+				16E3E3C8254C100700E53A5E /* OrderSheet.swift */,
 				16E3E389254BF57C00E53A5E /* Assets.xcassets */,
 				16E3E38E254BF57C00E53A5E /* Persistence.swift */,
 				16E3E393254BF57C00E53A5E /* Info.plist */,
@@ -276,6 +279,7 @@
 				16E3E38F254BF57C00E53A5E /* Persistence.swift in Sources */,
 				16E3E388254BF57A00E53A5E /* ContentView.swift in Sources */,
 				16E3E3BD254C030400E53A5E /* Order+CoreDataClass.swift in Sources */,
+				16E3E3C9254C100700E53A5E /* OrderSheet.swift in Sources */,
 				16E3E386254BF57A00E53A5E /* CoreDataTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
