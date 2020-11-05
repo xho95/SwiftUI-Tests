@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct PhotoGridApp: App {
     var body: some Scene {
+        let photoLibrary = PhotoLibrary()
+        
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: photoLibrary)
         }
     }
 }
