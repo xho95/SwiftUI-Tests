@@ -13,7 +13,7 @@ struct PhotoGridApp: App {
         let photoLibrary = PhotoLibrary()
         
         WindowGroup {
-            ContentView(viewModel: photoLibrary)
+            MultiGridView(viewModel: photoLibrary)
         }
     }
 }

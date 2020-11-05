@@ -8,18 +8,28 @@
 import Foundation
 
 struct PhotoAlbum {
-    var photos: [Photo]
+    var cafes: [Cafe]
     
-    init(numbersOfPhotos: Int, makePhotos: (Int) -> Photo) {
-        photos = [Photo]()
-        for index in 1...numbersOfPhotos {
-            photos.append(makePhotos(index))
+    init(numberOfCafes: Int, numberOfCoffees: Int, makeCafe: (Int) -> Cafe, makeCoffee: (Int) -> Coffee) {
+        cafes = [Cafe]()
+        for index in 1...numberOfCafes {
+            cafes.append(makeCafe(index))
+        }
+        
+        for index in cafes.indices {
+            let randomNumber = Int.random(in: 2...numberOfCoffees)
+            cafes[index].coffeePhotos = (1...randomNumber).map { index in makeCoffee(index) }
         }
     }
     
-    struct Photo: Identifiable {
+    struct Coffee: Identifiable {
         var id = UUID()
         var name: String
     }
 
+    struct Cafe: Identifiable {
+        var id = UUID()
+        var image: String
+        var coffeePhotos: [PhotoAlbum.Coffee] = []
+    }
 }
