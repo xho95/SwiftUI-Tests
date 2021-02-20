@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		16171E3025E0CCB50061CF6D /* PathMovingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16171E2F25E0CCB50061CF6D /* PathMovingApp.swift */; };
-		16171E3225E0CCB50061CF6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16171E3125E0CCB50061CF6D /* ContentView.swift */; };
+		16171E3225E0CCB50061CF6D /* PathTrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16171E3125E0CCB50061CF6D /* PathTrimView.swift */; };
 		16171E3425E0CCB70061CF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16171E3325E0CCB70061CF6D /* Assets.xcassets */; };
 		16171E3725E0CCB70061CF6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16171E3625E0CCB70061CF6D /* Preview Assets.xcassets */; };
+		16171E4025E0CD250061CF6D /* DrawingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16171E3F25E0CD250061CF6D /* DrawingPath.swift */; };
+		16A8ECC725E0D99F0098FA67 /* ParametricCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8ECC625E0D99F0098FA67 /* ParametricCurve.swift */; };
+		16A8ECCA25E0E1020098FA67 /* MyBezierCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8ECC925E0E1020098FA67 /* MyBezierCurve.swift */; };
+		16A8ECCD25E0E3DA0098FA67 /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8ECCC25E0E3DA0098FA67 /* Aircraft.swift */; };
+		16A8ECD025E0E5390098FA67 /* AircraftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8ECCF25E0E5390098FA67 /* AircraftView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16171E2C25E0CCB50061CF6D /* PathMoving.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathMoving.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16171E2F25E0CCB50061CF6D /* PathMovingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMovingApp.swift; sourceTree = "<group>"; };
-		16171E3125E0CCB50061CF6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16171E3125E0CCB50061CF6D /* PathTrimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathTrimView.swift; sourceTree = "<group>"; };
 		16171E3325E0CCB70061CF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16171E3625E0CCB70061CF6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16171E3825E0CCB70061CF6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16171E3F25E0CD250061CF6D /* DrawingPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingPath.swift; sourceTree = "<group>"; };
+		16A8ECC625E0D99F0098FA67 /* ParametricCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricCurve.swift; sourceTree = "<group>"; };
+		16A8ECC925E0E1020098FA67 /* MyBezierCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBezierCurve.swift; sourceTree = "<group>"; };
+		16A8ECCC25E0E3DA0098FA67 /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		16A8ECCF25E0E5390098FA67 /* AircraftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				16171E2F25E0CCB50061CF6D /* PathMovingApp.swift */,
-				16171E3125E0CCB50061CF6D /* ContentView.swift */,
+				16171E3125E0CCB50061CF6D /* PathTrimView.swift */,
+				16A8ECCF25E0E5390098FA67 /* AircraftView.swift */,
 				16171E3325E0CCB70061CF6D /* Assets.xcassets */,
 				16171E3825E0CCB70061CF6D /* Info.plist */,
 				16171E3525E0CCB70061CF6D /* Preview Content */,
+				16171E3F25E0CD250061CF6D /* DrawingPath.swift */,
+				16A8ECC625E0D99F0098FA67 /* ParametricCurve.swift */,
+				16A8ECC925E0E1020098FA67 /* MyBezierCurve.swift */,
+				16A8ECCC25E0E3DA0098FA67 /* Aircraft.swift */,
 			);
 			path = PathMoving;
 			sourceTree = "<group>";
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16171E3225E0CCB50061CF6D /* ContentView.swift in Sources */,
+				16171E3225E0CCB50061CF6D /* PathTrimView.swift in Sources */,
+				16A8ECC725E0D99F0098FA67 /* ParametricCurve.swift in Sources */,
+				16A8ECCA25E0E1020098FA67 /* MyBezierCurve.swift in Sources */,
+				16171E4025E0CD250061CF6D /* DrawingPath.swift in Sources */,
 				16171E3025E0CCB50061CF6D /* PathMovingApp.swift in Sources */,
+				16A8ECD025E0E5390098FA67 /* AircraftView.swift in Sources */,
+				16A8ECCD25E0E3DA0098FA67 /* Aircraft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

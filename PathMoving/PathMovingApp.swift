@@ -11,7 +11,8 @@ import SwiftUI
 struct PathMovingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AircraftView()
+            //PathTrimView()
         }
     }
 }
