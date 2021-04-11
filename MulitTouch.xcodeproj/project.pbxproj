@@ -11,6 +11,8 @@
 		16E1A60E2622C7B80080EBE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1A60D2622C7B80080EBE1 /* ContentView.swift */; };
 		16E1A6102622C7BA0080EBE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E1A60F2622C7BA0080EBE1 /* Assets.xcassets */; };
 		16E1A6132622C7BA0080EBE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E1A6122622C7BA0080EBE1 /* Preview Assets.xcassets */; };
+		16E1A61C2622CAF90080EBE1 /* TouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1A61B2622CAF90080EBE1 /* TouchableView.swift */; };
+		16E1A61F2622CB1D0080EBE1 /* TouchableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E1A61E2622CB1D0080EBE1 /* TouchableUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		16E1A60F2622C7BA0080EBE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16E1A6122622C7BA0080EBE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16E1A6142622C7BA0080EBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E1A61B2622CAF90080EBE1 /* TouchableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableView.swift; sourceTree = "<group>"; };
+		16E1A61E2622CB1D0080EBE1 /* TouchableUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				16E1A60B2622C7B80080EBE1 /* MulitTouchApp.swift */,
 				16E1A60D2622C7B80080EBE1 /* ContentView.swift */,
+				16E1A61B2622CAF90080EBE1 /* TouchableView.swift */,
+				16E1A61E2622CB1D0080EBE1 /* TouchableUIView.swift */,
 				16E1A60F2622C7BA0080EBE1 /* Assets.xcassets */,
 				16E1A6142622C7BA0080EBE1 /* Info.plist */,
 				16E1A6112622C7BA0080EBE1 /* Preview Content */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E1A61F2622CB1D0080EBE1 /* TouchableUIView.swift in Sources */,
+				16E1A61C2622CAF90080EBE1 /* TouchableView.swift in Sources */,
 				16E1A60E2622C7B80080EBE1 /* ContentView.swift in Sources */,
 				16E1A60C2622C7B80080EBE1 /* MulitTouchApp.swift in Sources */,
 			);
