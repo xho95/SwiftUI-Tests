@@ -16,19 +16,11 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                Image(uiImage: image)
-                    .scaleEffect(zoomScale)
-                    .offset(panOffset)
-                    .onAppear {
-                        zoomToFit(image, in: geometry.size)
-                        
-                        var location = CGPoint(x: image.size.width - geometry.size.width/2, y: image.size.height - geometry.size.height/2)
-                        location = CGPoint(x: image.size.width - self.panOffset.width, y: image.size.height - self.panOffset.height)
-                        location = CGPoint(x: image.size.width / self.zoomScale, y: image.size.height / self.zoomScale)
-                    }
-                    .onTapGesture(count: 2) {
-                        zoomToFit(image, in: geometry.size)
-                    }
+                ScrollView([.horizontal, .vertical], showsIndicators: false) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(image.size.width / image.size.height, contentMode: ContentMode.fit)
+                }
                 TouchableView()
             }
         }
