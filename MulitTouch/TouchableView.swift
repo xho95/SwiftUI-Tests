@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct TouchableView: UIViewRepresentable {
-    func makeUIView(context: Context) -> TouchableUIView {
-        return TouchableUIView()
+    func makeUIView(context: Context) -> UITouchableView {
+        return UITouchableView()
     }
     
-    func updateUIView(_ uiView: TouchableUIView, context: Context) {
+    func updateUIView(_ uiView: UITouchableView, context: Context) {
         //
     }
 }

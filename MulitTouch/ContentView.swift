@@ -19,10 +19,20 @@ struct ContentView: View {
                 ScrollView([.horizontal, .vertical], showsIndicators: false) {
                     Image(uiImage: image)
                         .resizable()
-                        .aspectRatio(image.size.width / image.size.height, contentMode: ContentMode.fit)
+                        .frame(width: scaledSize.width, height: scaledSize.height)
                 }
                 TouchableView()
             }
+            .onAppear {
+                zoomToFit(image, in: geometry.size)
+            }
+            .onTapGesture(count: 2) {
+                zoomToFit(image, in: geometry.size)
+            }
+            /*
+            .onRotate { newOrientation in
+                zoomToFit(image, in: geometry.size)
+            }*/
         }
     }
     
@@ -33,6 +43,10 @@ struct ContentView: View {
             self.panOffset = .zero
             self.zoomScale = min(hZoom, vZoom)
         }
+    }
+    
+    private var scaledSize: CGSize {
+        CGSize(width: image.size.width * zoomScale, height: image.size.height * zoomScale)
     }
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MulitTouchApp: App {
+struct MultiTouchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

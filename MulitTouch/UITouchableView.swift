@@ -8,9 +8,11 @@
 import Foundation
 import UIKit
 
-class TouchableUIView: UIView {
+class UITouchableView: UIView {
     var touchViews = [UITouch: TouchSpotView]()
-    
+
+    var image = UIImage(named: "kf-21")!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         isMultipleTouchEnabled = true
@@ -22,6 +24,8 @@ class TouchableUIView: UIView {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //guard touches.count >= 2 else { return }
+        
         for touch in touches {
             createViewForTouch(touch: touch)
         }
