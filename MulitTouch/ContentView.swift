@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var zoomScale: CGFloat = 1.0
-    @State var panOffset: CGSize = .zero
+    @State private var zoomScale: CGFloat = 1.0
+    @State private var panOffset: CGSize = .zero
     
-    @State var image = UIImage(named: "kf-21")!
+    @State private var image = UIImage(named: "kf-21")!
+    
+    let touchableView = TouchableView()
 
     var body: some View {
         GeometryReader { geometry in
+            ZStack {
+                touchableView
+            }
+            /*
             ZStack {
                 ScrollView([.horizontal, .vertical], showsIndicators: false) {
                     Image(uiImage: image)
@@ -28,7 +34,7 @@ struct ContentView: View {
             }
             .onTapGesture(count: 2) {
                 zoomToFit(image, in: geometry.size)
-            }
+            }*/
             /*
             .onRotate { newOrientation in
                 zoomToFit(image, in: geometry.size)
