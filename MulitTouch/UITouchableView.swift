@@ -22,7 +22,8 @@ class UITouchableView: UIView {
     var imageView = UIImageView()
     
     var imageTransform = CGAffineTransform()
-    
+    var oldTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0, ty: 0)
+
     //override var transform: CGAffineTransform
 
     override init(frame: CGRect) {
@@ -34,6 +35,8 @@ class UITouchableView: UIView {
         imageView.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
         imageView.transform = transform
         addSubview(imageView)
+        
+        //self.sizeThatFits(image.size)
     }
 
     required init?(coder: NSCoder) {
@@ -51,6 +54,8 @@ class UITouchableView: UIView {
             createViewForTouch(touch: touch)
             origins.append(centeredPoint(point: touch.location(in: self)))
         }
+        
+        imageView.transform = oldTransform
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -66,7 +71,7 @@ class UITouchableView: UIView {
         if origins.count == 2 && news.count == 2 {
             imageTransform = similarityTransform(origins: origins, news: news)
             //print(imageTransform)
-            imageView.transform = imageTransform
+            imageView.transform = oldTransform.concatenating(imageTransform)
         }
         
         news.removeAll()
@@ -78,6 +83,7 @@ class UITouchableView: UIView {
         }
 
         origins.removeAll()
+        oldTransform = imageView.transform
     }
     
     func createViewForTouch(touch: UITouch) {
