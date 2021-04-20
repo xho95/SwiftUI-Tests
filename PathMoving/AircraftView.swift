@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct AircraftView: View {
-    @ObservedObject var aircraft = Aircraft(from: .init(x: 0, y: 0),
-                                            to: .init(x: 250, y: 600),
-                                            control1: .init(x: 300, y: 100),
-                                            control2: .init(x: -150, y: 400))
+    @ObservedObject var aircraft = Aircraft(from: .init(x: 50, y: 10),
+                                            to: .init(x: 350, y: 600),
+                                            control1: .init(x: 800, y: 200),
+                                            control2: .init(x: -500, y: 400))
     var body: some View {
         VStack {
             ZStack {
