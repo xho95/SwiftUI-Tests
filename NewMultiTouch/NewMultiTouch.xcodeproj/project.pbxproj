@@ -11,6 +11,9 @@
 		16186768262EE0FA0087797D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16186767262EE0FA0087797D /* ContentView.swift */; };
 		1618676A262EE0FA0087797D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16186769262EE0FA0087797D /* Assets.xcassets */; };
 		1618676D262EE0FA0087797D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1618676C262EE0FA0087797D /* Preview Assets.xcassets */; };
+		16A648FC262EE34E004FDAA5 /* UITouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A648F9262EE34E004FDAA5 /* UITouchableView.swift */; };
+		16A648FD262EE34E004FDAA5 /* TouchableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A648FA262EE34E004FDAA5 /* TouchableView.swift */; };
+		16A648FE262EE34E004FDAA5 /* DeviceRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A648FB262EE34E004FDAA5 /* DeviceRotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		16186769262EE0FA0087797D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1618676C262EE0FA0087797D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1618676E262EE0FA0087797D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A648F9262EE34E004FDAA5 /* UITouchableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITouchableView.swift; path = ../../MultiTouch/MulitTouch/UITouchableView.swift; sourceTree = "<group>"; };
+		16A648FA262EE34E004FDAA5 /* TouchableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchableView.swift; path = ../../MultiTouch/MulitTouch/TouchableView.swift; sourceTree = "<group>"; };
+		16A648FB262EE34E004FDAA5 /* DeviceRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceRotation.swift; path = ../../MultiTouch/MulitTouch/DeviceRotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				16186765262EE0FA0087797D /* NewMultiTouchApp.swift */,
 				16186767262EE0FA0087797D /* ContentView.swift */,
+				16A648FB262EE34E004FDAA5 /* DeviceRotation.swift */,
+				16A648FA262EE34E004FDAA5 /* TouchableView.swift */,
+				16A648F9262EE34E004FDAA5 /* UITouchableView.swift */,
 				16186769262EE0FA0087797D /* Assets.xcassets */,
 				1618676E262EE0FA0087797D /* Info.plist */,
 				1618676B262EE0FA0087797D /* Preview Content */,
@@ -138,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A648FD262EE34E004FDAA5 /* TouchableView.swift in Sources */,
+				16A648FC262EE34E004FDAA5 /* UITouchableView.swift in Sources */,
+				16A648FE262EE34E004FDAA5 /* DeviceRotation.swift in Sources */,
 				16186768262EE0FA0087797D /* ContentView.swift in Sources */,
 				16186766262EE0FA0087797D /* NewMultiTouchApp.swift in Sources */,
 			);
