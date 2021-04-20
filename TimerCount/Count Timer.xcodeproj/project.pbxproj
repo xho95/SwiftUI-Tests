@@ -11,6 +11,9 @@
 		160BB42A261C41D2003967D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160BB429261C41D2003967D3 /* ContentView.swift */; };
 		160BB42C261C41D3003967D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160BB42B261C41D3003967D3 /* Assets.xcassets */; };
 		160BB42F261C41D3003967D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 160BB42E261C41D3003967D3 /* Preview Assets.xcassets */; };
+		16E3EB74262EB12100F7D502 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3EB73262EB12100F7D502 /* MyTimer.swift */; };
+		16E3EB77262EB14B00F7D502 /* MyTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3EB76262EB14B00F7D502 /* MyTimerView.swift */; };
+		16E3EB7D262EB30F00F7D502 /* MyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E3EB7C262EB30F00F7D502 /* MyTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		160BB42B261C41D3003967D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		160BB42E261C41D3003967D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		160BB430261C41D3003967D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E3EB73262EB12100F7D502 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
+		16E3EB76262EB14B00F7D502 /* MyTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimerView.swift; sourceTree = "<group>"; };
+		16E3EB7C262EB30F00F7D502 /* MyTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				160BB427261C41D2003967D3 /* Count_TimerApp.swift */,
-				160BB429261C41D2003967D3 /* ContentView.swift */,
+				16E3EB79262EB28000F7D502 /* Models */,
+				16E3EB7A262EB29300F7D502 /* Views */,
 				160BB42B261C41D3003967D3 /* Assets.xcassets */,
 				160BB430261C41D3003967D3 /* Info.plist */,
 				160BB42D261C41D3003967D3 /* Preview Content */,
@@ -67,6 +74,24 @@
 				160BB42E261C41D3003967D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16E3EB79262EB28000F7D502 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16E3EB7C262EB30F00F7D502 /* MyTime.swift */,
+				16E3EB73262EB12100F7D502 /* MyTimer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16E3EB7A262EB29300F7D502 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16E3EB76262EB14B00F7D502 /* MyTimerView.swift */,
+				160BB429261C41D2003967D3 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				160BB42A261C41D2003967D3 /* ContentView.swift in Sources */,
+				16E3EB74262EB12100F7D502 /* MyTimer.swift in Sources */,
+				16E3EB7D262EB30F00F7D502 /* MyTime.swift in Sources */,
+				16E3EB77262EB14B00F7D502 /* MyTimerView.swift in Sources */,
 				160BB428261C41D2003967D3 /* Count_TimerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
