@@ -82,11 +82,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16E3E379254BF57A00E53A5E = {
+		162B3D35254D447400B98895 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				16E3E3BB254C030400E53A5E /* Order+CoreDataClass.swift */,
 				16E3E3BC254C030400E53A5E /* Order+CoreDataProperties.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		16E3E379254BF57A00E53A5E = {
+			isa = PBXGroup;
+			children = (
 				16E3E384254BF57A00E53A5E /* CoreDataTest */,
 				16E3E39B254BF57C00E53A5E /* CoreDataTestTests */,
 				16E3E3A6254BF57D00E53A5E /* CoreDataTestUITests */,
@@ -107,13 +114,14 @@
 		16E3E384254BF57A00E53A5E /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
+				162B3D35254D447400B98895 /* Data */,
+				16E3E390254BF57C00E53A5E /* CoreDataTest.xcdatamodeld */,
+				16E3E38E254BF57C00E53A5E /* Persistence.swift */,
 				16E3E385254BF57A00E53A5E /* CoreDataTestApp.swift */,
 				16E3E387254BF57A00E53A5E /* ContentView.swift */,
 				16E3E3C8254C100700E53A5E /* OrderSheet.swift */,
 				16E3E389254BF57C00E53A5E /* Assets.xcassets */,
-				16E3E38E254BF57C00E53A5E /* Persistence.swift */,
 				16E3E393254BF57C00E53A5E /* Info.plist */,
-				16E3E390254BF57C00E53A5E /* CoreDataTest.xcdatamodeld */,
 				16E3E38B254BF57C00E53A5E /* Preview Content */,
 			);
 			path = CoreDataTest;
