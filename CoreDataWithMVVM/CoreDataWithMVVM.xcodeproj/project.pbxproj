@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1680B4A3254EA8A6003B79C8 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680B4A2254EA8A6003B79C8 /* TimeStamp.swift */; };
 		16D082C1254D54DC006456B1 /* CoreDataWithMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D082C0254D54DC006456B1 /* CoreDataWithMVVMApp.swift */; };
 		16D082C3254D54DC006456B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D082C2254D54DC006456B1 /* ContentView.swift */; };
 		16D082C5254D54DC006456B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D082C4254D54DC006456B1 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 		16D082CD254D54DC006456B1 /* CoreDataWithMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16D082CB254D54DC006456B1 /* CoreDataWithMVVM.xcdatamodeld */; };
 		16D082D8254D54DD006456B1 /* CoreDataWithMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D082D7254D54DD006456B1 /* CoreDataWithMVVMTests.swift */; };
 		16D082E3254D54DD006456B1 /* CoreDataWithMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D082E2254D54DD006456B1 /* CoreDataWithMVVMUITests.swift */; };
+		16D082F4254D5E86006456B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D082F3254D5E86006456B1 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1680B4A2254EA8A6003B79C8 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		16D082BD254D54DC006456B1 /* CoreDataWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D082C0254D54DC006456B1 /* CoreDataWithMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWithMVVMApp.swift; sourceTree = "<group>"; };
 		16D082C2254D54DC006456B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		16D082DE254D54DD006456B1 /* CoreDataWithMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataWithMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D082E2254D54DD006456B1 /* CoreDataWithMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWithMVVMUITests.swift; sourceTree = "<group>"; };
 		16D082E4254D54DD006456B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D082F3254D5E86006456B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1680B4A1254EA890003B79C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1680B4A2254EA8A6003B79C8 /* TimeStamp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		16D082B4254D54DB006456B1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +111,9 @@
 		16D082BF254D54DC006456B1 /* CoreDataWithMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1680B4A1254EA890003B79C8 /* Model */,
 				16D082C0254D54DC006456B1 /* CoreDataWithMVVMApp.swift */,
+				16D082F3254D5E86006456B1 /* MainView.swift */,
 				16D082C2254D54DC006456B1 /* ContentView.swift */,
 				16D082C4254D54DC006456B1 /* Assets.xcassets */,
 				16D082C9254D54DC006456B1 /* Persistence.swift */,
@@ -267,8 +281,10 @@
 			files = (
 				16D082CA254D54DC006456B1 /* Persistence.swift in Sources */,
 				16D082C3254D54DC006456B1 /* ContentView.swift in Sources */,
+				1680B4A3254EA8A6003B79C8 /* TimeStamp.swift in Sources */,
 				16D082CD254D54DC006456B1 /* CoreDataWithMVVM.xcdatamodeld in Sources */,
 				16D082C1254D54DC006456B1 /* CoreDataWithMVVMApp.swift in Sources */,
+				16D082F4254D5E86006456B1 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
