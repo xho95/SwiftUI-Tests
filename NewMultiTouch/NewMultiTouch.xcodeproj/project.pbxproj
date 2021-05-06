@@ -58,11 +58,9 @@
 		16186764262EE0FA0087797D /* NewMultiTouch */ = {
 			isa = PBXGroup;
 			children = (
-				16A64901262EE3EC004FDAA5 /* DeviceRotation.swift */,
-				16A64903262EE3EC004FDAA5 /* TouchableView.swift */,
-				16A64902262EE3EC004FDAA5 /* UITouchableView.swift */,
 				16186765262EE0FA0087797D /* NewMultiTouchApp.swift */,
-				16186767262EE0FA0087797D /* ContentView.swift */,
+				16D86C492643CF49005B7214 /* Frameworks */,
+				16D86C482643CF37005B7214 /* Views */,
 				16186769262EE0FA0087797D /* Assets.xcassets */,
 				1618676E262EE0FA0087797D /* Info.plist */,
 				1618676B262EE0FA0087797D /* Preview Content */,
@@ -76,6 +74,24 @@
 				1618676C262EE0FA0087797D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16D86C482643CF37005B7214 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16186767262EE0FA0087797D /* ContentView.swift */,
+				16A64903262EE3EC004FDAA5 /* TouchableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16D86C492643CF49005B7214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16A64901262EE3EC004FDAA5 /* DeviceRotation.swift */,
+				16A64902262EE3EC004FDAA5 /* UITouchableView.swift */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

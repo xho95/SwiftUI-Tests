@@ -29,7 +29,9 @@ struct ContentView: View {
 
     var drag: some Gesture {
         DragGesture(coordinateSpace: .named("stack"))
-            .onChanged { info in location = info.location }
+            .onChanged { info in
+                location = info.location
+            }
     }
 }
 
