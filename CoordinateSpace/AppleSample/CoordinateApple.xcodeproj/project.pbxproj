@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16D86C3A2643CB33005B7214 /* CoordinateSpaceTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D86C392643CB33005B7214 /* CoordinateSpaceTestApp.swift */; };
+		16D86C3A2643CB33005B7214 /* CoordinateAppleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D86C392643CB33005B7214 /* CoordinateAppleApp.swift */; };
 		16D86C3C2643CB33005B7214 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D86C3B2643CB33005B7214 /* ContentView.swift */; };
 		16D86C3E2643CB36005B7214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D86C3D2643CB35005B7214 /* Assets.xcassets */; };
 		16D86C412643CB36005B7214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D86C402643CB36005B7214 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16D86C362643CB33005B7214 /* CoordinateSpaceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinateSpaceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		16D86C392643CB33005B7214 /* CoordinateSpaceTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateSpaceTestApp.swift; sourceTree = "<group>"; };
+		16D86C362643CB33005B7214 /* CoordinateApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinateApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D86C392643CB33005B7214 /* CoordinateAppleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateAppleApp.swift; sourceTree = "<group>"; };
 		16D86C3B2643CB33005B7214 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16D86C3D2643CB35005B7214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16D86C402643CB36005B7214 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		16D86C2D2643CB33005B7214 = {
 			isa = PBXGroup;
 			children = (
-				16D86C382643CB33005B7214 /* CoordinateSpaceTest */,
+				16D86C382643CB33005B7214 /* CoordinateApple */,
 				16D86C372643CB33005B7214 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +44,21 @@
 		16D86C372643CB33005B7214 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16D86C362643CB33005B7214 /* CoordinateSpaceTest.app */,
+				16D86C362643CB33005B7214 /* CoordinateApple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		16D86C382643CB33005B7214 /* CoordinateSpaceTest */ = {
+		16D86C382643CB33005B7214 /* CoordinateApple */ = {
 			isa = PBXGroup;
 			children = (
-				16D86C392643CB33005B7214 /* CoordinateSpaceTestApp.swift */,
+				16D86C392643CB33005B7214 /* CoordinateAppleApp.swift */,
 				16D86C3B2643CB33005B7214 /* ContentView.swift */,
 				16D86C3D2643CB35005B7214 /* Assets.xcassets */,
 				16D86C422643CB36005B7214 /* Info.plist */,
 				16D86C3F2643CB36005B7214 /* Preview Content */,
 			);
-			path = CoordinateSpaceTest;
+			path = CoordinateApple;
 			sourceTree = "<group>";
 		};
 		16D86C3F2643CB36005B7214 /* Preview Content */ = {
@@ -72,9 +72,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16D86C352643CB33005B7214 /* CoordinateSpaceTest */ = {
+		16D86C352643CB33005B7214 /* CoordinateApple */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16D86C452643CB36005B7214 /* Build configuration list for PBXNativeTarget "CoordinateSpaceTest" */;
+			buildConfigurationList = 16D86C452643CB36005B7214 /* Build configuration list for PBXNativeTarget "CoordinateApple" */;
 			buildPhases = (
 				16D86C322643CB33005B7214 /* Sources */,
 				16D86C332643CB33005B7214 /* Frameworks */,
@@ -84,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = CoordinateSpaceTest;
+			name = CoordinateApple;
 			productName = CoordinateSpaceTest;
-			productReference = 16D86C362643CB33005B7214 /* CoordinateSpaceTest.app */;
+			productReference = 16D86C362643CB33005B7214 /* CoordinateApple.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16D86C312643CB33005B7214 /* Build configuration list for PBXProject "CoordinateSpaceTest" */;
+			buildConfigurationList = 16D86C312643CB33005B7214 /* Build configuration list for PBXProject "CoordinateApple" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16D86C352643CB33005B7214 /* CoordinateSpaceTest */,
+				16D86C352643CB33005B7214 /* CoordinateApple */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D86C3C2643CB33005B7214 /* ContentView.swift in Sources */,
-				16D86C3A2643CB33005B7214 /* CoordinateSpaceTestApp.swift in Sources */,
+				16D86C3A2643CB33005B7214 /* CoordinateAppleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +268,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CoordinateSpaceTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoordinateApple/Preview Content\"";
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CoordinateSpaceTest/Info.plist;
+				INFOPLIST_FILE = CoordinateApple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.CoordinateSpaceTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.CoordinateApple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,16 +290,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CoordinateSpaceTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CoordinateApple/Preview Content\"";
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CoordinateSpaceTest/Info.plist;
+				INFOPLIST_FILE = CoordinateApple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.CoordinateSpaceTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.CoordinateApple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16D86C312643CB33005B7214 /* Build configuration list for PBXProject "CoordinateSpaceTest" */ = {
+		16D86C312643CB33005B7214 /* Build configuration list for PBXProject "CoordinateApple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16D86C432643CB36005B7214 /* Debug */,
@@ -318,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16D86C452643CB36005B7214 /* Build configuration list for PBXNativeTarget "CoordinateSpaceTest" */ = {
+		16D86C452643CB36005B7214 /* Build configuration list for PBXNativeTarget "CoordinateApple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16D86C462643CB36005B7214 /* Debug */,

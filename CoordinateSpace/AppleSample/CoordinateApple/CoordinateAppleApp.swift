@@ -1,6 +1,6 @@
 //
-//  CoordinateSpaceTestApp.swift
-//  CoordinateSpaceTest
+//  CoordinateAppleApp.swift
+//  CoordinateAppleApp
 //
 //  Created by Kim, Min Ho on 2021/05/06.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CoordinateSpaceTestApp: App {
+struct CoordinateAppleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
