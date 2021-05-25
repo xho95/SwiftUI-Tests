@@ -21,9 +21,9 @@ class UITouchableView: UIView {
     var touchViews = [UITouch: TouchSpotView]()
     var imageView = UIImageView()
     
-    var imageTransform = CGAffineTransform()
-    var oldTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0, ty: 0)
-
+    var imageTransform = CGAffineTransform.identity
+    var oldTransform = CGAffineTransform.identity
+    
     //override var transform: CGAffineTransform
 
     override init(frame: CGRect) {
@@ -33,9 +33,12 @@ class UITouchableView: UIView {
         let image = UIImage(named: "kf-21")!
         imageView.image = image
         imageView.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
-        imageView.transform = transform
+        imageView.transform = self.transform
+        //imageView.transform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: frame.midX, ty: frame.midY)
+        
         addSubview(imageView)
         
+        oldTransform = imageView.transform
         //self.sizeThatFits(image.size)
     }
 
@@ -46,6 +49,7 @@ class UITouchableView: UIView {
 
     override func layoutSubviews() {
         imageView.center = CGPoint(x: frame.midX, y: frame.midY)
+        //oldTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: frame.midX, ty: frame.midY)
         super.layoutSubviews()
     }
     
@@ -67,10 +71,9 @@ class UITouchableView: UIView {
             news.append(centeredPoint(point: touch.location(in: self)))
         }
         
-        //print("\(touches)")
         if origins.count == 2 && news.count == 2 {
             imageTransform = similarityTransform(origins: origins, news: news)
-            //print(imageTransform)
+                    
             imageView.transform = oldTransform.concatenating(imageTransform)
         }
         
@@ -145,7 +148,7 @@ class UITouchableView: UIView {
 class TouchSpotView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        //backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
     }
     
     required init?(coder: NSCoder) {

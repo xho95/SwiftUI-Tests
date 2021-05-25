@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var zoomScale: CGFloat = 1.0
-    @State private var panOffset: CGSize = .zero
-    
-    @State private var image = UIImage(named: "kf-21")!
+//    @State private var zoomScale: CGFloat = 1.0
+//    @State private var panOffset: CGSize = .zero
+//
+//    @State private var image = UIImage(named: "kf-21")!
     
     let touchableView = TouchableView()
 
@@ -42,18 +42,18 @@ struct ContentView: View {
         }
     }
     
-    private func zoomToFit(_ image: UIImage?, in size: CGSize) {
-        if let image = image, image.size.width > 0, image.size.height > 0, size.height > 0, size.width > 0 {
-            let hZoom = size.width / image.size.width
-            let vZoom = size.height / image.size.height
-            self.panOffset = .zero
-            self.zoomScale = min(hZoom, vZoom)
-        }
-    }
-    
-    private var scaledSize: CGSize {
-        CGSize(width: image.size.width * zoomScale, height: image.size.height * zoomScale)
-    }
+//    private func zoomToFit(_ image: UIImage?, in size: CGSize) {
+//        if let image = image, image.size.width > 0, image.size.height > 0, size.height > 0, size.width > 0 {
+//            let hZoom = size.width / image.size.width
+//            let vZoom = size.height / image.size.height
+//            self.panOffset = .zero
+//            self.zoomScale = min(hZoom, vZoom)
+//        }
+//    }
+//
+//    private var scaledSize: CGSize {
+//        CGSize(width: image.size.width * zoomScale, height: image.size.height * zoomScale)
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
