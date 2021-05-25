@@ -28,17 +28,35 @@ struct OuterView: View {
 }
 
 struct InnerView: View {
+    @State private var globalCenter = CGPoint.zero
+    @State private var customCenter = CGPoint.zero
+    @State private var localCenter = CGPoint.zero
+
     var body: some View {
         HStack {
             Text("Left")
             GeometryReader { geo in
-                Text("Center")
-                    .background(Color.blue)
-                    .onTapGesture {
-                        print("Global center: \(geo.frame(in: .global).midX) x \(geo.frame(in: .global).midY)")
-                        print("Custom center: \(geo.frame(in: .named("Custom")).midX) x \(geo.frame(in: .named("Custom")).midY)")
-                        print("Local center: \(geo.frame(in: .local).midX) x \(geo.frame(in: .local).midY)")
-                    }
+                VStack {
+                    Text("Center")
+                        .padding()
+                        .background(Color.blue)
+                    
+                    Rectangle()
+                        .foregroundColor(.white)
+                        .frame(width: 250, height: 250, alignment: .center)
+                        .onTapGesture {
+                            globalCenter = CGPoint(x: geo.frame(in: .global).midX,
+                                                   y: geo.frame(in: .global).midY)
+                            customCenter = CGPoint(x: geo.frame(in: .named("Custom")).midX,
+                                                   y: geo.frame(in: .named("Custom")).midY)
+                            localCenter = CGPoint(x: geo.frame(in: .local).midX,
+                                                  y: geo.frame(in: .local).midY)
+                        }
+                    
+                    Text("Global center: \(globalCenter.x) x \(globalCenter.y)")
+                    Text("Custom center: \(customCenter.x) x \(customCenter.y)")
+                    Text("Local center: \(localCenter.x) x \(localCenter.y)")
+                }
             }
             .background(Color.orange)
             Text("Right")
