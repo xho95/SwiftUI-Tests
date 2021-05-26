@@ -11,8 +11,28 @@ struct TouchableView: UIViewRepresentable {
     func makeUIView(context: Context) -> UITouchableView {
         UITouchableView()
     }
-    
+
     func updateUIView(_ uiView: UITouchableView, context: Context) {
         //
     }
+/*
+    var callback: () -> CGPoint
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(callback: self.callback)
+    }
+
+    class Coordinator: NSObject {
+        var callback: () -> CGPoint
+        
+        init(callback: @escaping () -> CGPoint) {
+            self.callback = callback
+        }
+//
+//        @objc func tapped(gesture:UITapGestureRecognizer) {
+//            let point = gesture.location(in: gesture.view)
+//            self.tappedCallback(point)
+//        }
+    }
+*/
 }

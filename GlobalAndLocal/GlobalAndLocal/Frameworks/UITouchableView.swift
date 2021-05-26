@@ -10,6 +10,10 @@ import UIKit
 
 class UITouchableView: UIView {
     var touchViews = [UITouch: TouchSpotView]()
+
+    var touchPoint: CGPoint {
+        touchViews.first?.value.center ?? CGPoint.zero
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,6 +39,8 @@ class UITouchableView: UIView {
             let newLocation = touch.location(in: self)
             view?.center = newLocation
         }
+        
+        print("x: \(Int(touchViews.first?.value.center.x ?? .zero)), y: \(Int(touchViews.first?.value.center.y ?? .zero))")
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

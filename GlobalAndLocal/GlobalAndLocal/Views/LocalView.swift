@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LocalView: View {
+    @Binding var position: CGPoint
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -31,6 +33,6 @@ struct LocalView: View {
 
 struct LocalView_Previews: PreviewProvider {
     static var previews: some View {
-        LocalView()
+        LocalView(position: .constant(.zero))
     }
 }
