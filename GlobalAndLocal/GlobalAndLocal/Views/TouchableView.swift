@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TouchableView: UIViewRepresentable {
+    //@Binding var position: CGPoint
+    
     func makeUIView(context: Context) -> UITouchableView {
         UITouchableView()
     }
@@ -16,7 +18,7 @@ struct TouchableView: UIViewRepresentable {
         //
     }
 /*
-    var callback: () -> CGPoint
+    var callback: () -> Void
 
     func makeCoordinator() -> Coordinator {
         Coordinator(callback: self.callback)

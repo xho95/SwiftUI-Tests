@@ -28,7 +28,7 @@ struct GlobalView: View {
             .overlay(
                 VStack {
                     HStack {
-                        Text("x: \(position.x), y: \(position.y)")
+                        Text("x: \(Int(MyTouch.touches.first?.value.x ?? .zero)), y: \(Int(MyTouch.touches.first?.value.y ?? .zero))")
                             .padding()
                         
                         Spacer()
