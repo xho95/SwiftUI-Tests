@@ -22,10 +22,10 @@ class UITouchableView: UIView {
     var imageView = UIImageView()
     
     var imageTransform = CGAffineTransform.identity
-    var oldTransform = CGAffineTransform.identity
-    
-    //override var transform: CGAffineTransform
 
+    var oldTransform = CGAffineTransform.identity
+    var myTransform = CGAffineTransform.identity
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         isMultipleTouchEnabled = true
@@ -33,13 +33,9 @@ class UITouchableView: UIView {
         let image = UIImage(named: "kf-21")!
         imageView.image = image
         imageView.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
-        imageView.transform = self.transform
-        //imageView.transform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: frame.midX, ty: frame.midY)
+        //imageView.transform = myTransform
         
         addSubview(imageView)
-        
-        oldTransform = imageView.transform
-        //self.sizeThatFits(image.size)
     }
 
     required init?(coder: NSCoder) {
@@ -48,18 +44,22 @@ class UITouchableView: UIView {
     }
 
     override func layoutSubviews() {
-        imageView.center = CGPoint(x: frame.midX, y: frame.midY)
-        //oldTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: frame.midX, ty: frame.midY)
+        //imageView.center = CGPoint(x: frame.midX, y: frame.midY)
         super.layoutSubviews()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             createViewForTouch(touch: touch)
-            origins.append(centeredPoint(point: touch.location(in: self)))
+            
+            let originLocation = touch.location(in: self)
+            if let globalOrigin = self.superview?.convert(originLocation, to: nil) {
+                globalOrigin.applying(oldTransform)
+                origins.append(globalOrigin)
+            }
         }
-        
-        imageView.transform = oldTransform
+
+        //myTransform = oldTransform
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -68,15 +68,26 @@ class UITouchableView: UIView {
             let newLocation = touch.location(in: self)
             view?.center = newLocation
             
-            news.append(centeredPoint(point: touch.location(in: self)))
+            if let globalNew = self.superview?.convert(newLocation, to: nil) {
+                globalNew.applying(oldTransform)
+                news.append(globalNew)
+            }
         }
         
         if origins.count == 2 && news.count == 2 {
-            imageTransform = similarityTransform(origins: origins, news: news)
-                    
-            imageView.transform = oldTransform.concatenating(imageTransform)
+            let newTransform = similarityTransform(origins: origins, news: news)
+            //myTransform = newTransform
+            myTransform = oldTransform.concatenating(newTransform)
+            imageView.transform = myTransform
+            
+            //oldTransform = myTransform
+            if let origin = origins.first, let new = news.first {
+                print("(\(origin.x), \(origin.y)) -> (\(new.x), \(new.y)")
+            }
+            print("\(CGAffineTransform.identity.tx), \(CGAffineTransform.identity.ty) -> \(newTransform.tx), \(newTransform.ty)")
         }
         
+        //print("(\(origins.first?.x), \(origins.first?.y)) -> (\(news.first?.x), \(news.first?.y)")
         news.removeAll()
     }
     
@@ -84,9 +95,12 @@ class UITouchableView: UIView {
         for touch in touches {
             removeViewForTouch(touch: touch)
         }
+        
+        if oldTransform != myTransform {
+            oldTransform = myTransform
+        }
 
         origins.removeAll()
-        oldTransform = imageView.transform
     }
     
     func createViewForTouch(touch: UITouch) {
@@ -135,7 +149,7 @@ class UITouchableView: UIView {
         //let tx: CGFloat = (news[0].x - a * origins[0].x - b * origins[0].y)
         // ty = y1' + b.x1 - a.y1 = y2' + b.x2 - a.y2
         // tx = ((y1' + b.x1 - a.y1) + (y2' + b.x2 - a.y2)) / 2
-        let ty: CGFloat = ((news[0].y + b * origins[0].x - a * origins[0].y) + (news[1].y + a * origins[1].x - b * origins[1].y)) / 2.0
+        let ty: CGFloat = ((news[0].y + b * origins[0].x - a * origins[0].y) + (news[1].y + b * origins[1].x - a * origins[1].y)) / 2.0
         
         return CGAffineTransform(a: a, b: b, c: c, d: d, tx: tx, ty: ty)
     }
@@ -148,7 +162,7 @@ class UITouchableView: UIView {
 class TouchSpotView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        //backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
     }
     
     required init?(coder: NSCoder) {

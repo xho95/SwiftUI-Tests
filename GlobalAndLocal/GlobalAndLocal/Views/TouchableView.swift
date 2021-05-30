@@ -11,14 +11,17 @@ struct TouchableView: UIViewRepresentable {
     //@Binding var position: CGPoint
     
     func makeUIView(context: Context) -> UITouchableView {
-        UITouchableView()
+        let touchableView = UITouchableView()
+        //touchableView.
+
+        return touchableView
     }
 
     func updateUIView(_ uiView: UITouchableView, context: Context) {
         //
     }
 /*
-    var callback: () -> Void
+    var callback: () -> CGPoint
 
     func makeCoordinator() -> Coordinator {
         Coordinator(callback: self.callback)

@@ -38,7 +38,10 @@ class UITouchableView: UIView {
             MyTouch.touches[touch] = newLocation
         }
         
-        //print("x: \(Int(touchViews.first?.value.center.x ?? .zero)), y: \(Int(touchViews.first?.value.center.y ?? .zero))")
+        for touch in touchViews.keys {
+            print("x: \(Int(touchViews[touch]?.center.x ?? .zero)), y: \(Int(touchViews[touch]?.center.y ?? .zero)) / ", terminator: "")
+        }
+        print("")
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
