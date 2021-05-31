@@ -66,6 +66,7 @@ class UITouchableView: UIView {
             
             let originLocation = touch.location(in: self)
 
+            //originLocation.applying(oldTransform)
             touchPoints[touch] = TouchPoint(origin: originLocation, new: .zero)
 
 //            if let globalOrigin = self.superview?.convert(originLocation, to: nil) {
@@ -86,6 +87,7 @@ class UITouchableView: UIView {
             view?.center = newLocation
             
             if let touch = touchPoints[touch] {
+                //newLocation.applying(oldTransform)
                 touch.new = newLocation
             }
 
