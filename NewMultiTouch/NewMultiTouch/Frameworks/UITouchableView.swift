@@ -9,19 +9,31 @@ import Foundation
 import UIKit
 
 class UITouchableView: UIView {
-    enum Finger {
-        case one, two
-    }
+//    enum Finger {
+//        case one, two
+//    }
+//
+//    var fingers: Finger = .one
     
-    var fingers: Finger = .one
+    class TouchPoint {
+        var origin: CGPoint
+        var new: CGPoint
+        
+        init(origin: CGPoint = .zero, new: CGPoint = .zero) {
+            self.origin = origin
+            self.new = new
+        }
+    }
     
     var origins = [CGPoint]()
     var news = [CGPoint]()
+    
+    var touchPoints = [UITouch: TouchPoint]()
 
     var touchViews = [UITouch: TouchSpotView]()
     var imageView = UIImageView()
     
-    var imageTransform = CGAffineTransform.identity
+//    var imageTransform = CGAffineTransform.identity
 
     var oldTransform = CGAffineTransform.identity
     var myTransform = CGAffineTransform.identity
@@ -53,13 +65,18 @@ class UITouchableView: UIView {
             createViewForTouch(touch: touch)
             
             let originLocation = touch.location(in: self)
-            if let globalOrigin = self.superview?.convert(originLocation, to: nil) {
-                globalOrigin.applying(oldTransform)
-                origins.append(globalOrigin)
-            }
+
+            touchPoints[touch] = TouchPoint(origin: originLocation, new: .zero)
+
+//            if let globalOrigin = self.superview?.convert(originLocation, to: nil) {
+//                globalOrigin.applying(oldTransform)
+//                //origins.append(globalOrigin)
+//
+//                touchPoints[touch] = TouchPoint(origin: globalOrigin, new: .zero)
+//            }
         }
 
-        //myTransform = oldTransform
+        //imageView.transform = oldTransform
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -68,39 +85,63 @@ class UITouchableView: UIView {
             let newLocation = touch.location(in: self)
             view?.center = newLocation
             
-            if let globalNew = self.superview?.convert(newLocation, to: nil) {
-                globalNew.applying(oldTransform)
-                news.append(globalNew)
+            if let touch = touchPoints[touch] {
+                touch.new = newLocation
             }
+
+//            if let globalNew = self.superview?.convert(newLocation, to: nil) {
+//                globalNew.applying(oldTransform)
+//                //news.append(globalNew)
+//
+//                if let touch = touchPoints[touch] {
+//                    touch.new = globalNew
+//                }
+//            }
         }
         
-        if origins.count == 2 && news.count == 2 {
+        if touchPoints.count == 2 {
+            for touch in touchPoints.keys {
+                origins.append(touchPoints[touch]!.origin)
+                news.append(touchPoints[touch]!.new)
+            }
+
+            let newTransform = similarityTransform(origins: origins, news: news)
+            //myTransform = newTransform
+            myTransform = oldTransform.concatenating(newTransform)
+            imageView.transform = myTransform
+        }
+        /*
+        if origins.count == 2 && originnews.count == 2 {
             let newTransform = similarityTransform(origins: origins, news: news)
             //myTransform = newTransform
             myTransform = oldTransform.concatenating(newTransform)
             imageView.transform = myTransform
             
             //oldTransform = myTransform
-            if let origin = origins.first, let new = news.first {
-                print("(\(origin.x), \(origin.y)) -> (\(new.x), \(new.y)")
-            }
-            print("\(CGAffineTransform.identity.tx), \(CGAffineTransform.identity.ty) -> \(newTransform.tx), \(newTransform.ty)")
+//            if let origin = origins.first, let new = news.first {
+//                print("(\(origin.x), \(origin.y)) -> (\(new.x), \(new.y)")
+//            }
+//            print("\(CGAffineTransform.identity.tx), \(CGAffineTransform.identity.ty) -> \(newTransform.tx), \(newTransform.ty)")
         }
-        
+        */
         //print("(\(origins.first?.x), \(origins.first?.y)) -> (\(news.first?.x), \(news.first?.y)")
+        
+        //touchPoints.removeAll()
+
+        origins.removeAll()
         news.removeAll()
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
             removeViewForTouch(touch: touch)
+            
+            touchPoints.removeValue(forKey: touch)
         }
         
-        if oldTransform != myTransform {
-            oldTransform = myTransform
-        }
+        oldTransform = myTransform
 
-        origins.removeAll()
+        //origins.removeAll()
     }
     
     func createViewForTouch(touch: UITouch) {
@@ -153,7 +194,7 @@ class UITouchableView: UIView {
         
         return CGAffineTransform(a: a, b: b, c: c, d: d, tx: tx, ty: ty)
     }
-    
+
     func centeredPoint(point: CGPoint) -> CGPoint {
         CGPoint(x: point.x - frame.midX, y: point.y - frame.midY)
     }
