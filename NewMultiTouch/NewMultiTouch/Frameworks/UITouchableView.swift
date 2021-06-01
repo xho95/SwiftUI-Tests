@@ -32,10 +32,13 @@ class UITouchableView: UIView {
     var touchViews = [UITouch: TouchSpotView]()
     var imageView = UIImageView()
     
-//    var imageTransform = CGAffineTransform.identity
+    var moveTransform = CGAffineTransform.identity
+    var reverseTransform = CGAffineTransform.identity
 
     var oldTransform = CGAffineTransform.identity
     var myTransform = CGAffineTransform.identity
+    
+    var imageTransform = CGAffineTransform.identity
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,6 +51,9 @@ class UITouchableView: UIView {
         //imageView.transform = myTransform
         
         addSubview(imageView)
+
+//        oldTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: frame.midX, ty: frame.midY)
+//        imageView.transform = oldTransform
     }
 
     required init?(coder: NSCoder) {
@@ -56,13 +62,17 @@ class UITouchableView: UIView {
     }
 
     override func layoutSubviews() {
-        //imageView.center = CGPoint(x: frame.midX, y: frame.midY)
+        imageView.center = CGPoint(x: frame.midX, y: frame.midY)
+
         super.layoutSubviews()
+        
+        moveTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: frame.midX, ty: frame.midY)
+        reverseTransform = CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: -frame.midX, ty: -frame.midY)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
-            createViewForTouch(touch: touch)
+            //createViewForTouch(touch: touch)
             
             let originLocation = touch.location(in: self)
 
@@ -114,7 +124,10 @@ class UITouchableView: UIView {
             if origins.count == 2 && news.count == origins.count {
                 let newTransform = similarityTransform(origins: origins, news: news)
                 //myTransform = newTransform
-                myTransform = oldTransform.concatenating(newTransform)
+                //myTransform = oldTransform.concatenating(newTransform)
+                
+                imageTransform = oldTransform.concatenating(newTransform)
+                myTransform = moveTransform.concatenating(imageTransform).concatenating(reverseTransform)
                 imageView.transform = myTransform
             }
         }
@@ -147,10 +160,10 @@ class UITouchableView: UIView {
             touchPoints.removeValue(forKey: touch)
         }
         
-        oldTransform = myTransform
+        oldTransform = imageTransform
         
-        print(myTransform)
-        print(CGAffineTransform.identity)
+//        print(myTransform)
+//        print(CGAffineTransform.identity)
 
         //origins.removeAll()
     }
