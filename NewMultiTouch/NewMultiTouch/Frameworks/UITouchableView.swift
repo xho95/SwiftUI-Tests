@@ -16,12 +16,11 @@ class UITouchableView: UIView {
 //    var fingers: Finger = .one
     
     class TouchPoint {
-        var origin: CGPoint
-        var new: CGPoint
+        var origin: CGPoint?
+        var new: CGPoint?
         
-        init(origin: CGPoint = .zero, new: CGPoint = .zero) {
+        init(origin: CGPoint) {
             self.origin = origin
-            self.new = new
         }
     }
     
@@ -45,6 +44,7 @@ class UITouchableView: UIView {
         let image = UIImage(named: "kf-21")!
         imageView.image = image
         imageView.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        imageView.center = CGPoint(x: 0, y: 0)
         //imageView.transform = myTransform
         
         addSubview(imageView)
@@ -67,7 +67,7 @@ class UITouchableView: UIView {
             let originLocation = touch.location(in: self)
 
             //originLocation.applying(oldTransform)
-            touchPoints[touch] = TouchPoint(origin: originLocation, new: .zero)
+            touchPoints[touch] = TouchPoint(origin: originLocation)
 
 //            if let globalOrigin = self.superview?.convert(originLocation, to: nil) {
 //                globalOrigin.applying(oldTransform)
@@ -103,14 +103,20 @@ class UITouchableView: UIView {
         
         if touchPoints.count == 2 {
             for touch in touchPoints.keys {
-                origins.append(touchPoints[touch]!.origin)
-                news.append(touchPoints[touch]!.new)
+                if let origin = touchPoints[touch]!.origin {
+                    origins.append(origin)
+                }
+                if let new = touchPoints[touch]!.new {
+                    news.append(new)
+                }
             }
 
-            let newTransform = similarityTransform(origins: origins, news: news)
-            //myTransform = newTransform
-            myTransform = oldTransform.concatenating(newTransform)
-            imageView.transform = myTransform
+            if origins.count == 2 && news.count == origins.count {
+                let newTransform = similarityTransform(origins: origins, news: news)
+                //myTransform = newTransform
+                myTransform = oldTransform.concatenating(newTransform)
+                imageView.transform = myTransform
+            }
         }
         /*
         if origins.count == 2 && originnews.count == 2 {
@@ -126,7 +132,7 @@ class UITouchableView: UIView {
 //            print("\(CGAffineTransform.identity.tx), \(CGAffineTransform.identity.ty) -> \(newTransform.tx), \(newTransform.ty)")
         }
         */
-        //print("(\(origins.first?.x), \(origins.first?.y)) -> (\(news.first?.x), \(news.first?.y)")
+        //print("(\(origins.first?.x ?? 0), \(origins.first?.y ?? 0)) -> (\(news.first?.x ?? 0), \(news.first?.y ?? 0)")
         
         //touchPoints.removeAll()
 
@@ -142,6 +148,9 @@ class UITouchableView: UIView {
         }
         
         oldTransform = myTransform
+        
+        print(myTransform)
+        print(CGAffineTransform.identity)
 
         //origins.removeAll()
     }
@@ -186,13 +195,15 @@ class UITouchableView: UIView {
         let b: CGFloat = sin(angle) * scale
         let c: CGFloat = -b
         let d: CGFloat = a
+        // tx = x1' - a.x1 + b.y1 = x2' - a.x2 + b.y2
+        // tx = ((x1' - a.x1 + b.y1) + (x2' - a.x2 + b.y2)) / 2
         // tx = x1' - a.x1 - b.y1 = x2' - a.x2 - b.y2
         // tx = ((x1' - a.x1 - b.y1) + (x2' - a.x2 - b.y2)) / 2
-        let tx: CGFloat = ((news[0].x - a * origins[0].x - b * origins[0].y) + (news[1].x - a * origins[1].x - b * origins[1].y)) / 2.0
-        //let tx: CGFloat = (news[0].x - a * origins[0].x - b * origins[0].y)
-        // ty = y1' + b.x1 - a.y1 = y2' + b.x2 - a.y2
-        // tx = ((y1' + b.x1 - a.y1) + (y2' + b.x2 - a.y2)) / 2
-        let ty: CGFloat = ((news[0].y + b * origins[0].x - a * origins[0].y) + (news[1].y + b * origins[1].x - a * origins[1].y)) / 2.0
+        let tx: CGFloat = ((news[0].x - a * origins[0].x + b * origins[0].y) + (news[1].x - a * origins[1].x + b * origins[1].y)) / 2.0
+        // let tx: CGFloat = (news[0].x - a * origins[0].x - b * origins[0].y)
+        // ty = y1' - b.x1 - a.y1 = y2' - b.x2 - a.y2
+        // ty = ((y1' - b.x1 - a.y1) + (y2' - b.x2 - a.y2)) / 2
+        let ty: CGFloat = ((news[0].y - b * origins[0].x - a * origins[0].y) + (news[1].y - b * origins[1].x - a * origins[1].y)) / 2.0
         
         return CGAffineTransform(a: a, b: b, c: c, d: d, tx: tx, ty: ty)
     }
