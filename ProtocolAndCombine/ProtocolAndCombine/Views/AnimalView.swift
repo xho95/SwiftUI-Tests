@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct AnimalView: View {
-    @ObservedObject var animal = Animal()
+    @ObservedObject var animal: Animal
     
     var body: some View {
         VStack {
-            Text(animal.displayData)
+            Text(animal.textToShow)
                 .font(.system(.largeTitle))
                 .padding()
 
@@ -27,6 +27,6 @@ struct AnimalView: View {
 
 struct AnimalView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimalView()
+        AnimalView(animal: Animal(generator: AnimalGenerator()))
     }
 }

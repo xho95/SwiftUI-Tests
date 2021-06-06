@@ -8,7 +8,10 @@
 import Foundation
 
 protocol Generator {
-    @Published var name: String { get }
+    var name: String { get }    //  Wrapped Value
     
-    func genenrate()
+    var namePublished: Published<String> { get }                // Property Wrapper?
+    var namePublisher: Published<String>.Publisher { get }      // Publisher
+    
+    func generate()
 }

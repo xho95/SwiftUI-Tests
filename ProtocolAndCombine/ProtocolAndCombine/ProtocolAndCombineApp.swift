@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct ProtocolAndCombineApp: App {
+    let animal = Animal(generator: PersonGenerator())
+    
     var body: some Scene {
         WindowGroup {
-            AnimalView()
+            AnimalView(animal: animal)
         }
     }
 }

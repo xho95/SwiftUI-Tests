@@ -1,5 +1,5 @@
 //
-//  AnimalGenerator.swift
+//  PersonGenerator.swift
 //  ProtocolAndCombine
 //
 //  Created by Kim, Min Ho on 2021/06/06.
@@ -7,19 +7,19 @@
 
 import Foundation
 
-class AnimalGenerator: ObservableObject, Generator {
-    @Published private(set) var name: String = ""
-    
+class PersonGenerator: ObservableObject, Generator {
     var namePublished: Published<String> { _name }
     var namePublisher: Published<String>.Publisher { $name }
     
-    let animals = ["Cat", "Dog", "Crow", "Horse", "Iguana", "Cow", "Racoon"]
+    @Published private(set) var name: String = ""
+    
+    let people = ["Jone", "Jane", "Carlos", "Daniel", "Helen", "David", "Bill"]
     
     init() {
         generate()
     }
     
     func generate() {
-        self.name = animals.randomElement() ?? ""
+        self.name = people.randomElement() ?? ""
     }
 }

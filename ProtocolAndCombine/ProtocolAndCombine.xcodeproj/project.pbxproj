@@ -14,6 +14,7 @@
 		16BFFA7D266CA79D009ECAB0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA7C266CA79D009ECAB0 /* Animal.swift */; };
 		16BFFA7F266CA85A009ECAB0 /* AnimalGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */; };
 		16BFFA82266CADBB009ECAB0 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA81266CADBB009ECAB0 /* Generator.swift */; };
+		16BFFA84266CB2B7009ECAB0 /* PersonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA83266CB2B7009ECAB0 /* PersonGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		16BFFA7C266CA79D009ECAB0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGenerator.swift; sourceTree = "<group>"; };
 		16BFFA81266CADBB009ECAB0 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		16BFFA83266CB2B7009ECAB0 /* PersonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */,
+				16BFFA83266CB2B7009ECAB0 /* PersonGenerator.swift */,
 				16BFFA7C266CA79D009ECAB0 /* Animal.swift */,
 			);
 			path = Models;
@@ -173,6 +176,7 @@
 			files = (
 				16BFFA6E266CA69E009ECAB0 /* AnimalView.swift in Sources */,
 				16BFFA7F266CA85A009ECAB0 /* AnimalGenerator.swift in Sources */,
+				16BFFA84266CB2B7009ECAB0 /* PersonGenerator.swift in Sources */,
 				16BFFA7D266CA79D009ECAB0 /* Animal.swift in Sources */,
 				16BFFA6C266CA69E009ECAB0 /* ProtocolAndCombineApp.swift in Sources */,
 				16BFFA82266CADBB009ECAB0 /* Generator.swift in Sources */,

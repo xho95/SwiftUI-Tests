@@ -9,17 +9,19 @@ import Foundation
 import Combine
 
 class Animal: ObservableObject {
-    @Published var displayData: String = "No data"
+    @Published var textToShow: String = "No data"
     
-    var generator: AnimalGenerator = AnimalGenerator()
+    var generator: Generator
     var cancellable: AnyCancellable?
     
-    init() {
+    init(generator: Generator) {
+        self.generator = generator
+        
         cancellable = generator
-            .$name
+            .namePublisher
             .receive(on: RunLoop.main)
             .sink { [weak self] data in
-                self?.displayData = data
+                self?.textToShow = data
             }
     }
     
