@@ -1,5 +1,5 @@
 //
-//  ReducLikeApp.swift
+//  ReduxLikeApp.swift
 //  ReducLike
 //
 //  Created by Kim, Min Ho on 2021/06/06.
@@ -10,10 +10,13 @@
 import SwiftUI
 
 @main
-struct ReducLikeApp: App {
+struct ReduxLikeApp: App {
+    @StateObject var store = AppStore(state: .init(), reducer: appReducer)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AnimalView()
+                .environmentObject(store)
         }
     }
 }

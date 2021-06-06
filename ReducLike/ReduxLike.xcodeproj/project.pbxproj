@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		164FC962266C9FBE00B94079 /* ReducLikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FC961266C9FBE00B94079 /* ReducLikeApp.swift */; };
-		164FC964266C9FBE00B94079 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FC963266C9FBE00B94079 /* ContentView.swift */; };
+		164891E9266CD33A00FD2153 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164891E8266CD33A00FD2153 /* State.swift */; };
+		164891EB266CD3A600FD2153 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164891EA266CD3A600FD2153 /* Action.swift */; };
+		164891ED266CD4B300FD2153 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164891EC266CD4B300FD2153 /* Reducer.swift */; };
+		164891EF266CD59900FD2153 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164891EE266CD59900FD2153 /* Store.swift */; };
+		164FC962266C9FBE00B94079 /* ReduxLikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FC961266C9FBE00B94079 /* ReduxLikeApp.swift */; };
+		164FC964266C9FBE00B94079 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FC963266C9FBE00B94079 /* AnimalView.swift */; };
 		164FC966266C9FBF00B94079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164FC965266C9FBF00B94079 /* Assets.xcassets */; };
 		164FC969266C9FBF00B94079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164FC968266C9FBF00B94079 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		164FC95E266C9FBE00B94079 /* ReducLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReducLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		164FC961266C9FBE00B94079 /* ReducLikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducLikeApp.swift; sourceTree = "<group>"; };
-		164FC963266C9FBE00B94079 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		164891E8266CD33A00FD2153 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		164891EA266CD3A600FD2153 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		164891EC266CD4B300FD2153 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		164891EE266CD59900FD2153 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		164FC95E266C9FBE00B94079 /* ReduxLike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxLike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		164FC961266C9FBE00B94079 /* ReduxLikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxLikeApp.swift; sourceTree = "<group>"; };
+		164FC963266C9FBE00B94079 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 		164FC965266C9FBF00B94079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		164FC968266C9FBF00B94079 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		164FC96A266C9FBF00B94079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,10 +41,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164891E5266CD2F100FD2153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				164891E8266CD33A00FD2153 /* State.swift */,
+				164891EA266CD3A600FD2153 /* Action.swift */,
+				164891EC266CD4B300FD2153 /* Reducer.swift */,
+				164891EE266CD59900FD2153 /* Store.swift */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		164891E6266CD2F700FD2153 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		164891E7266CD2FD00FD2153 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				164FC963266C9FBE00B94079 /* AnimalView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		164FC955266C9FBE00B94079 = {
 			isa = PBXGroup;
 			children = (
-				164FC960266C9FBE00B94079 /* ReducLike */,
+				164FC960266C9FBE00B94079 /* ReduxLike */,
 				164FC95F266C9FBE00B94079 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +78,23 @@
 		164FC95F266C9FBE00B94079 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				164FC95E266C9FBE00B94079 /* ReducLike.app */,
+				164FC95E266C9FBE00B94079 /* ReduxLike.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		164FC960266C9FBE00B94079 /* ReducLike */ = {
+		164FC960266C9FBE00B94079 /* ReduxLike */ = {
 			isa = PBXGroup;
 			children = (
-				164FC961266C9FBE00B94079 /* ReducLikeApp.swift */,
-				164FC963266C9FBE00B94079 /* ContentView.swift */,
+				164FC961266C9FBE00B94079 /* ReduxLikeApp.swift */,
+				164891E5266CD2F100FD2153 /* Frameworks */,
+				164891E6266CD2F700FD2153 /* Models */,
+				164891E7266CD2FD00FD2153 /* Views */,
 				164FC965266C9FBF00B94079 /* Assets.xcassets */,
 				164FC96A266C9FBF00B94079 /* Info.plist */,
 				164FC967266C9FBF00B94079 /* Preview Content */,
 			);
-			path = ReducLike;
+			path = ReduxLike;
 			sourceTree = "<group>";
 		};
 		164FC967266C9FBF00B94079 /* Preview Content */ = {
@@ -72,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		164FC95D266C9FBE00B94079 /* ReducLike */ = {
+		164FC95D266C9FBE00B94079 /* ReduxLike */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 164FC96D266C9FBF00B94079 /* Build configuration list for PBXNativeTarget "ReducLike" */;
+			buildConfigurationList = 164FC96D266C9FBF00B94079 /* Build configuration list for PBXNativeTarget "ReduxLike" */;
 			buildPhases = (
 				164FC95A266C9FBE00B94079 /* Sources */,
 				164FC95B266C9FBE00B94079 /* Frameworks */,
@@ -84,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = ReducLike;
+			name = ReduxLike;
 			productName = ReducLike;
-			productReference = 164FC95E266C9FBE00B94079 /* ReducLike.app */;
+			productReference = 164FC95E266C9FBE00B94079 /* ReduxLike.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 164FC959266C9FBE00B94079 /* Build configuration list for PBXProject "ReducLike" */;
+			buildConfigurationList = 164FC959266C9FBE00B94079 /* Build configuration list for PBXProject "ReduxLike" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				164FC95D266C9FBE00B94079 /* ReducLike */,
+				164FC95D266C9FBE00B94079 /* ReduxLike */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				164FC964266C9FBE00B94079 /* ContentView.swift in Sources */,
-				164FC962266C9FBE00B94079 /* ReducLikeApp.swift in Sources */,
+				164891E9266CD33A00FD2153 /* State.swift in Sources */,
+				164891EB266CD3A600FD2153 /* Action.swift in Sources */,
+				164FC964266C9FBE00B94079 /* AnimalView.swift in Sources */,
+				164891EF266CD59900FD2153 /* Store.swift in Sources */,
+				164891ED266CD4B300FD2153 /* Reducer.swift in Sources */,
+				164FC962266C9FBE00B94079 /* ReduxLikeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +308,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ReducLike/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ReduxLike/Preview Content\"";
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ReducLike/Info.plist;
+				INFOPLIST_FILE = ReduxLike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReducLike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxLike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,16 +330,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ReducLike/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ReduxLike/Preview Content\"";
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ReducLike/Info.plist;
+				INFOPLIST_FILE = ReduxLike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReducLike;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxLike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		164FC959266C9FBE00B94079 /* Build configuration list for PBXProject "ReducLike" */ = {
+		164FC959266C9FBE00B94079 /* Build configuration list for PBXProject "ReduxLike" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				164FC96B266C9FBF00B94079 /* Debug */,
@@ -318,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		164FC96D266C9FBF00B94079 /* Build configuration list for PBXNativeTarget "ReducLike" */ = {
+		164FC96D266C9FBF00B94079 /* Build configuration list for PBXNativeTarget "ReduxLike" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				164FC96E266C9FBF00B94079 /* Debug */,
