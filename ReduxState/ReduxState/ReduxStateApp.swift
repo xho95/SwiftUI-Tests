@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ReduxStateApp: App {
+    @StateObject var store = AppStore(state: .init(), reducer: appReducer, environment: World())
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchContainerView()
+                .environmentObject(store)
         }
     }
 }
