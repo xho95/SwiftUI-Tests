@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		16BFFA6C266CA69E009ECAB0 /* ProtocolAndCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA6B266CA69E009ECAB0 /* ProtocolAndCombineApp.swift */; };
-		16BFFA6E266CA69E009ECAB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA6D266CA69E009ECAB0 /* ContentView.swift */; };
+		16BFFA6E266CA69E009ECAB0 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA6D266CA69E009ECAB0 /* AnimalView.swift */; };
 		16BFFA70266CA69F009ECAB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BFFA6F266CA69F009ECAB0 /* Assets.xcassets */; };
 		16BFFA73266CA69F009ECAB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BFFA72266CA69F009ECAB0 /* Preview Assets.xcassets */; };
+		16BFFA7D266CA79D009ECAB0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA7C266CA79D009ECAB0 /* Animal.swift */; };
+		16BFFA7F266CA85A009ECAB0 /* AnimalGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16BFFA68266CA69E009ECAB0 /* ProtocolAndCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolAndCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BFFA6B266CA69E009ECAB0 /* ProtocolAndCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolAndCombineApp.swift; sourceTree = "<group>"; };
-		16BFFA6D266CA69E009ECAB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		16BFFA6D266CA69E009ECAB0 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
 		16BFFA6F266CA69F009ECAB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BFFA72266CA69F009ECAB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16BFFA74266CA69F009ECAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BFFA7C266CA79D009ECAB0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				16BFFA6B266CA69E009ECAB0 /* ProtocolAndCombineApp.swift */,
-				16BFFA6D266CA69E009ECAB0 /* ContentView.swift */,
+				16BFFA7A266CA769009ECAB0 /* Models */,
+				16BFFA7B266CA772009ECAB0 /* Views */,
 				16BFFA6F266CA69F009ECAB0 /* Assets.xcassets */,
 				16BFFA74266CA69F009ECAB0 /* Info.plist */,
 				16BFFA71266CA69F009ECAB0 /* Preview Content */,
@@ -67,6 +72,23 @@
 				16BFFA72266CA69F009ECAB0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16BFFA7A266CA769009ECAB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */,
+				16BFFA7C266CA79D009ECAB0 /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16BFFA7B266CA772009ECAB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16BFFA6D266CA69E009ECAB0 /* AnimalView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BFFA6E266CA69E009ECAB0 /* ContentView.swift in Sources */,
+				16BFFA6E266CA69E009ECAB0 /* AnimalView.swift in Sources */,
+				16BFFA7F266CA85A009ECAB0 /* AnimalGenerator.swift in Sources */,
+				16BFFA7D266CA79D009ECAB0 /* Animal.swift in Sources */,
 				16BFFA6C266CA69E009ECAB0 /* ProtocolAndCombineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
