@@ -13,6 +13,7 @@
 		16BFFA73266CA69F009ECAB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BFFA72266CA69F009ECAB0 /* Preview Assets.xcassets */; };
 		16BFFA7D266CA79D009ECAB0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA7C266CA79D009ECAB0 /* Animal.swift */; };
 		16BFFA7F266CA85A009ECAB0 /* AnimalGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */; };
+		16BFFA82266CADBB009ECAB0 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BFFA81266CADBB009ECAB0 /* Generator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		16BFFA74266CA69F009ECAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16BFFA7C266CA79D009ECAB0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		16BFFA7E266CA85A009ECAB0 /* AnimalGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGenerator.swift; sourceTree = "<group>"; };
+		16BFFA81266CADBB009ECAB0 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				16BFFA6B266CA69E009ECAB0 /* ProtocolAndCombineApp.swift */,
+				16BFFA80266CADA8009ECAB0 /* Frameworks */,
 				16BFFA7A266CA769009ECAB0 /* Models */,
 				16BFFA7B266CA772009ECAB0 /* Views */,
 				16BFFA6F266CA69F009ECAB0 /* Assets.xcassets */,
@@ -89,6 +92,14 @@
 				16BFFA6D266CA69E009ECAB0 /* AnimalView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		16BFFA80266CADA8009ECAB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16BFFA81266CADBB009ECAB0 /* Generator.swift */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				16BFFA7F266CA85A009ECAB0 /* AnimalGenerator.swift in Sources */,
 				16BFFA7D266CA79D009ECAB0 /* Animal.swift in Sources */,
 				16BFFA6C266CA69E009ECAB0 /* ProtocolAndCombineApp.swift in Sources */,
+				16BFFA82266CADBB009ECAB0 /* Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

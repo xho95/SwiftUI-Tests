@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AnimalGenerator: ObservableObject {
+class AnimalGenerator: ObservableObject, Generator {
     @Published private(set) var name: String = ""
     
     let animals = ["Cat", "Dog", "Crow", "Horse", "Iguana", "Cow", "Racoon"]
