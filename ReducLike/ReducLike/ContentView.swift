@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  ReduxState
+//  ReducLike
 //
-//  Created by Kim, Min Ho on 2021/06/03.
+//  Created by Kim, Min Ho on 2021/06/06.
 //
 
 import SwiftUI
