@@ -6,6 +6,7 @@
 //
 
 // https://danielbernal.co/redux-like-architecture-with-swiftui-basics/
+// https://danielbernal.co/redux-like-architecture-with-swiftui-middleware/
 
 import SwiftUI
 
