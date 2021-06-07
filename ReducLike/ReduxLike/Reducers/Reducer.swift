@@ -15,12 +15,3 @@ func appReducer(state: inout State, action: Action) -> Void {
         animalReducer(state: &state.animal, action: action)
     }
 }
-
-func animalReducer(state: inout Animal, action: AnimalAction) -> Void {
-    switch action {
-    case .fetchAnimal:
-        break
-    case .setCurrentAnimal(let animal):
-        state.current = animal
-    }
-}

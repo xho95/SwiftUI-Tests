@@ -17,6 +17,8 @@
 		164FC969266C9FBF00B94079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 164FC968266C9FBF00B94079 /* Preview Assets.xcassets */; };
 		16EC0414266DFE8200AFDB3C /* AnimalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC0413266DFE8200AFDB3C /* AnimalService.swift */; };
 		16EC0416266E03D900AFDB3C /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC0415266E03D900AFDB3C /* Animal.swift */; };
+		16EC041B266E25D900AFDB3C /* AnimalReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC041A266E25D900AFDB3C /* AnimalReducer.swift */; };
+		16EC041D266E25F500AFDB3C /* AnimalAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC041C266E25F500AFDB3C /* AnimalAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		164FC96A266C9FBF00B94079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16EC0413266DFE8200AFDB3C /* AnimalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalService.swift; sourceTree = "<group>"; };
 		16EC0415266E03D900AFDB3C /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		16EC041A266E25D900AFDB3C /* AnimalReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalReducer.swift; sourceTree = "<group>"; };
+		16EC041C266E25F500AFDB3C /* AnimalAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,15 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		164891E5266CD2F100FD2153 /* Frameworks */ = {
+		164891E5266CD2F100FD2153 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
 				164891EA266CD3A600FD2153 /* Action.swift */,
-				164891EC266CD4B300FD2153 /* Reducer.swift */,
-				164891EE266CD59900FD2153 /* Store.swift */,
-				16EC0413266DFE8200AFDB3C /* AnimalService.swift */,
+				16EC041C266E25F500AFDB3C /* AnimalAction.swift */,
 			);
-			path = Frameworks;
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		164891E6266CD2F700FD2153 /* Models */ = {
@@ -92,10 +94,13 @@
 		164FC960266C9FBE00B94079 /* ReduxLike */ = {
 			isa = PBXGroup;
 			children = (
-				164FC961266C9FBE00B94079 /* ReduxLikeApp.swift */,
-				164891E5266CD2F100FD2153 /* Frameworks */,
+				16EC0417266E253F00AFDB3C /* Services */,
 				164891E6266CD2F700FD2153 /* Models */,
+				164891E5266CD2F100FD2153 /* Actions */,
+				16EC0418266E256700AFDB3C /* Reducers */,
+				16EC0419266E259400AFDB3C /* ViewModels */,
 				164891E7266CD2FD00FD2153 /* Views */,
+				164FC961266C9FBE00B94079 /* ReduxLikeApp.swift */,
 				164FC965266C9FBF00B94079 /* Assets.xcassets */,
 				164FC96A266C9FBF00B94079 /* Info.plist */,
 				164FC967266C9FBF00B94079 /* Preview Content */,
@@ -109,6 +114,31 @@
 				164FC968266C9FBF00B94079 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16EC0417266E253F00AFDB3C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16EC0413266DFE8200AFDB3C /* AnimalService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		16EC0418266E256700AFDB3C /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				164891EC266CD4B300FD2153 /* Reducer.swift */,
+				16EC041A266E25D900AFDB3C /* AnimalReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		16EC0419266E259400AFDB3C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				164891EE266CD59900FD2153 /* Store.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +213,12 @@
 				164891E9266CD33A00FD2153 /* State.swift in Sources */,
 				164891EB266CD3A600FD2153 /* Action.swift in Sources */,
 				164FC964266C9FBE00B94079 /* AnimalView.swift in Sources */,
+				16EC041D266E25F500AFDB3C /* AnimalAction.swift in Sources */,
 				16EC0414266DFE8200AFDB3C /* AnimalService.swift in Sources */,
 				164891EF266CD59900FD2153 /* Store.swift in Sources */,
 				164891ED266CD4B300FD2153 /* Reducer.swift in Sources */,
 				164FC962266C9FBE00B94079 /* ReduxLikeApp.swift in Sources */,
+				16EC041B266E25D900AFDB3C /* AnimalReducer.swift in Sources */,
 				16EC0416266E03D900AFDB3C /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

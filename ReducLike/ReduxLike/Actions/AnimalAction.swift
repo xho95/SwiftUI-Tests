@@ -1,15 +1,11 @@
 //
-//  Action.swift
+//  AnimalAction.swift
 //  ReduxLike
 //
-//  Created by Kim, Min Ho on 2021/06/06.
+//  Created by Kim, Min Ho on 2021/06/07.
 //
 
 import Foundation
-
-enum Action {
-    case animal(action: AnimalAction)
-}
 
 enum AnimalAction {
     case fetchAnimal
