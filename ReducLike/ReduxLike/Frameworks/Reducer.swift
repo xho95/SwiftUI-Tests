@@ -11,7 +11,16 @@ typealias Reducer<State, Action> = (inout State, Action) -> Void
 
 func appReducer(state: inout State, action: Action) -> Void {
     switch action {
-    case .getAnimal:
-        state.currentAnimal = ["Cat", "Dog", "Crow", "Horse", "Iguana", "Cow", "Racoon"].randomElement() ?? ""
+    case .animal(let action):
+        animalReducer(state: &state.animal, action: action)
+    }
+}
+
+func animalReducer(state: inout Animal, action: AnimalAction) -> Void {
+    switch action {
+    case .fetchAnimal:
+        break
+    case .setCurrentAnimal(let animal):
+        state.current = animal
     }
 }
