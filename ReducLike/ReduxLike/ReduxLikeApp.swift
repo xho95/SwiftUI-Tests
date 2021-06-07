@@ -12,7 +12,11 @@ import SwiftUI
 
 @main
 struct ReduxLikeApp: App {
-    @StateObject var store = AppStore(state: .init(), reducer: appReducer)
+    @StateObject var store = AppStore(state: .init(animal: Animal()),
+                                      reducer: appReducer,
+                                      middlewares: [
+                                        animalMiddleware(service: AnimalService())
+                                      ])
     
     var body: some Scene {
         WindowGroup {

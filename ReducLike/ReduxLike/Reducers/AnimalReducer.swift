@@ -10,7 +10,7 @@ import Foundation
 func animalReducer(state: inout Animal, action: AnimalAction) -> Void {
     switch action {
     case .fetchAnimal:
-        break
+        state.current = "Loading..."
     case .setCurrentAnimal(let animal):
         state.current = animal
     }

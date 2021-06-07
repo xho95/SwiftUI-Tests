@@ -12,19 +12,23 @@ struct AnimalView: View {
     
     var body: some View {
         VStack {
-            Text(store.state.currentAnimal)
+            Text(store.state.animal.current)
                 .font(.system(.largeTitle))
                 .padding()
             
             Button {
-                store.dispatch(.getAnimal)
+                loadAnimal()
             } label: {
                 Text("Tap me")
             }
         }
         .onAppear {
-            store.dispatch(.getAnimal)
+            loadAnimal()
         }
+    }
+    
+    private func loadAnimal() {
+        store.dispatch(.animal(action: .fetchAnimal))
     }
 }
 
