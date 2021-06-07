@@ -20,6 +20,7 @@
 		16EC041B266E25D900AFDB3C /* AnimalReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC041A266E25D900AFDB3C /* AnimalReducer.swift */; };
 		16EC041D266E25F500AFDB3C /* AnimalAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC041C266E25F500AFDB3C /* AnimalAction.swift */; };
 		16EC0420266E28DC00AFDB3C /* AnimalMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC041F266E28DC00AFDB3C /* AnimalMiddleware.swift */; };
+		16EC0422266E308300AFDB3C /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EC0421266E308300AFDB3C /* LogMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		16EC041A266E25D900AFDB3C /* AnimalReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalReducer.swift; sourceTree = "<group>"; };
 		16EC041C266E25F500AFDB3C /* AnimalAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAction.swift; sourceTree = "<group>"; };
 		16EC041F266E28DC00AFDB3C /* AnimalMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalMiddleware.swift; sourceTree = "<group>"; };
+		16EC0421266E308300AFDB3C /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				16EC041F266E28DC00AFDB3C /* AnimalMiddleware.swift */,
+				16EC0421266E308300AFDB3C /* LogMiddleware.swift */,
 			);
 			path = Middlewares;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				164891E9266CD33A00FD2153 /* State.swift in Sources */,
 				164891EB266CD3A600FD2153 /* Action.swift in Sources */,
+				16EC0422266E308300AFDB3C /* LogMiddleware.swift in Sources */,
 				164FC964266C9FBE00B94079 /* AnimalView.swift in Sources */,
 				16EC041D266E25F500AFDB3C /* AnimalAction.swift in Sources */,
 				16EC0414266DFE8200AFDB3C /* AnimalService.swift in Sources */,

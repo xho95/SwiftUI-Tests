@@ -15,7 +15,8 @@ struct ReduxLikeApp: App {
     @StateObject var store = AppStore(state: .init(animal: Animal()),
                                       reducer: appReducer,
                                       middlewares: [
-                                        animalMiddleware(service: AnimalService())
+                                        animalMiddleware(service: AnimalService()),
+                                        logMiddleware()
                                       ])
     
     var body: some Scene {
