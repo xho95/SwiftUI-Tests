@@ -13,6 +13,7 @@
 		16751D81268C48B2003EE7AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16751D80268C48B2003EE7AF /* Preview Assets.xcassets */; };
 		16751D8C268C48B2003EE7AF /* UnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16751D8B268C48B2003EE7AF /* UnitTestTests.swift */; };
 		16751D97268C48B2003EE7AF /* UnitTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16751D96268C48B2003EE7AF /* UnitTestUITests.swift */; };
+		16751DA5268C4937003EE7AF /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16751DA4268C4937003EE7AF /* PlayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		16751D92268C48B2003EE7AF /* UnitTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16751D96268C48B2003EE7AF /* UnitTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestUITests.swift; sourceTree = "<group>"; };
 		16751D98268C48B2003EE7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16751DA4268C4937003EE7AF /* PlayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				16751D7D268C48B2003EE7AF /* Assets.xcassets */,
 				16751D82268C48B2003EE7AF /* Info.plist */,
 				16751D7F268C48B2003EE7AF /* Preview Content */,
+				16751DA4268C4937003EE7AF /* PlayData.swift */,
 			);
 			path = UnitTest;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16751DA5268C4937003EE7AF /* PlayData.swift in Sources */,
 				16751D7C268C48B0003EE7AF /* ContentView.swift in Sources */,
 				16751D7A268C48B0003EE7AF /* UnitTestApp.swift in Sources */,
 			);
