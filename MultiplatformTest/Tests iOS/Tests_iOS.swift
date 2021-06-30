@@ -7,8 +7,6 @@
 
 import XCTest
 
-@testable import MultiplatformTest
-
 class Tests_iOS: XCTestCase {
 
     override func setUpWithError() throws {
@@ -43,10 +41,4 @@ class Tests_iOS: XCTestCase {
         }
     }
      */
-    
-    func testAllWordsLoaded() {
-        let playData = PlayData()
-        
-        XCTAssertEqual(playData.allWords.count, 0, "allWords must be 0")
-    }
 }

@@ -17,6 +17,7 @@
 		16751DDA268C4970003EE7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16751DAE268C4970003EE7AF /* Assets.xcassets */; };
 		16751DEA268C4CC6003EE7AF /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16751DE9268C4CC6003EE7AF /* PlayData.swift */; };
 		16751DEB268C4CC6003EE7AF /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16751DE9268C4CC6003EE7AF /* PlayData.swift */; };
+		16C3C272268C53B700D71507 /* Tests_Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C3C271268C53B700D71507 /* Tests_Shared.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 16751DBA268C4970003EE7AF;
 			remoteInfo = "JustTest (macOS)";
+		};
+		16C3C274268C53B700D71507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16751DA7268C496F003EE7AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16751DB2268C4970003EE7AF;
+			remoteInfo = "MultiplatformTest (iOS)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +60,9 @@
 		16751DD2268C4970003EE7AF /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		16751DD4268C4970003EE7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16751DE9268C4CC6003EE7AF /* PlayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayData.swift; sourceTree = "<group>"; };
+		16C3C26F268C53B700D71507 /* Tests Shared.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests Shared.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C3C271268C53B700D71507 /* Tests_Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_Shared.swift; sourceTree = "<group>"; };
+		16C3C273268C53B700D71507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16C3C26C268C53B700D71507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +112,7 @@
 				16751DBC268C4970003EE7AF /* macOS */,
 				16751DC6268C4970003EE7AF /* Tests iOS */,
 				16751DD1268C4970003EE7AF /* Tests macOS */,
+				16C3C270268C53B700D71507 /* Tests Shared */,
 				16751DB4268C4970003EE7AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,6 +135,7 @@
 				16751DBB268C4970003EE7AF /* MultiplatformTest.app */,
 				16751DC3268C4970003EE7AF /* Tests iOS.xctest */,
 				16751DCE268C4970003EE7AF /* Tests macOS.xctest */,
+				16C3C26F268C53B700D71507 /* Tests Shared.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +173,15 @@
 				16751DD4268C4970003EE7AF /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		16C3C270268C53B700D71507 /* Tests Shared */ = {
+			isa = PBXGroup;
+			children = (
+				16C3C271268C53B700D71507 /* Tests_Shared.swift */,
+				16C3C273268C53B700D71507 /* Info.plist */,
+			);
+			path = "Tests Shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +257,24 @@
 			productReference = 16751DCE268C4970003EE7AF /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		16C3C26E268C53B700D71507 /* Tests Shared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C3C278268C53B700D71507 /* Build configuration list for PBXNativeTarget "Tests Shared" */;
+			buildPhases = (
+				16C3C26B268C53B700D71507 /* Sources */,
+				16C3C26C268C53B700D71507 /* Frameworks */,
+				16C3C26D268C53B700D71507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C3C275268C53B700D71507 /* PBXTargetDependency */,
+			);
+			name = "Tests Shared";
+			productName = "Tests Shared";
+			productReference = 16C3C26F268C53B700D71507 /* Tests Shared.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +298,10 @@
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 16751DBA268C4970003EE7AF;
 					};
+					16C3C26E268C53B700D71507 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 16751DB2268C4970003EE7AF;
+					};
 				};
 			};
 			buildConfigurationList = 16751DAA268C496F003EE7AF /* Build configuration list for PBXProject "MultiplatformTest" */;
@@ -270,6 +321,7 @@
 				16751DBA268C4970003EE7AF /* MultiplatformTest (macOS) */,
 				16751DC2268C4970003EE7AF /* Tests iOS */,
 				16751DCD268C4970003EE7AF /* Tests macOS */,
+				16C3C26E268C53B700D71507 /* Tests Shared */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +351,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		16751DCC268C4970003EE7AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C3C26D268C53B700D71507 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,6 +403,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16C3C26B268C53B700D71507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C3C272268C53B700D71507 /* Tests_Shared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -356,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = 16751DBA268C4970003EE7AF /* MultiplatformTest (macOS) */;
 			targetProxy = 16751DCF268C4970003EE7AF /* PBXContainerItemProxy */;
+		};
+		16C3C275268C53B700D71507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16751DB2268C4970003EE7AF /* MultiplatformTest (iOS) */;
+			targetProxy = 16C3C274268C53B700D71507 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -653,6 +725,51 @@
 			};
 			name = Release;
 		};
+		16C3C276268C53B700D71507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				INFOPLIST_FILE = "Tests Shared/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xho95.Tests-Shared";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiplatformTest.app/MultiplatformTest";
+			};
+			name = Debug;
+		};
+		16C3C277268C53B700D71507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				INFOPLIST_FILE = "Tests Shared/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xho95.Tests-Shared";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiplatformTest.app/MultiplatformTest";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -697,6 +814,15 @@
 			buildConfigurations = (
 				16751DE7268C4970003EE7AF /* Debug */,
 				16751DE8268C4970003EE7AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C3C278268C53B700D71507 /* Build configuration list for PBXNativeTarget "Tests Shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C3C276268C53B700D71507 /* Debug */,
+				16C3C277268C53B700D71507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
