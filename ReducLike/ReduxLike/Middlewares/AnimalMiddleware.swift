@@ -8,10 +8,10 @@
 import Foundation
 import Combine
 
-enum AnimalMiddlewareError: Error {
-    case unknown
-    case networkError
-}
+//enum AnimalMiddlewareError: Error {
+//    case unknown
+//    case networkError
+//}
 
 func animalMiddleware(service: AnimalService) -> Middleware<State, Action> {
     { state, action in
@@ -23,9 +23,9 @@ func animalMiddleware(service: AnimalService) -> Middleware<State, Action> {
                 .catch { (error: AnimalServiceError) -> Just<Action> in
                     switch error {
                     case .unknown:
-                        return Just(Action.animal(action: .fetchComplete(animal: "Oops")))
+                        return Just(Action.animal(action: .fetchError(error: AnimalServiceError.unknown)))
                     case .networkError:
-                        return Just(Action.animal(action: .fetchComplete(animal: "Network Failed")))
+                        return Just(Action.animal(action: .fetchError(error: AnimalServiceError.networkError)))
                     }
                 }
                 .eraseToAnyPublisher()

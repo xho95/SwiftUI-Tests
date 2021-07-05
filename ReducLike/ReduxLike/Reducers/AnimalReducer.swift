@@ -10,10 +10,12 @@ import Foundation
 func animalReducer(state: inout Animal, action: AnimalAction) -> Void {
     switch action {
     case .fetch:
+        state.fetchError = nil
         state.fetchInProcess = true
+        state.current = ""
 
     case .fetchComplete(let animal):
-        state.fetchError = nil
+//        state.fetchError = nil
         state.fetchInProcess = false
         state.current = animal
         

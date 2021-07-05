@@ -9,8 +9,13 @@ import SwiftUI
 
 struct AnimalView: View {
     @EnvironmentObject var store: AppStore
-    
+
     var body: some View {
+        let shouldDisplayError = Binding<Bool>(
+            get: { store.state.animal.fetchError != nil },
+            set: { _ in store.dispatch(.animal(action: .fetchError(error: nil))) }
+        )
+
         VStack {
             if store.state.animal.fetchInProcess {
                 ProgressView("Fetching Animal...")
@@ -27,7 +32,14 @@ struct AnimalView: View {
             }
         }
         .onAppear {
-            loadAnimal()
+           loadAnimal()
+        }
+        .alert(isPresented: shouldDisplayError) {
+            Alert(
+                title: Text("An error has Occured"),
+                message: Text(store.state.animal.fetchError ?? ""),
+                dismissButton: .default(Text("Got it!"))
+            )
         }
     }
     
