@@ -12,14 +12,18 @@ struct AnimalView: View {
     
     var body: some View {
         VStack {
-            Text(store.state.animal.current)
-                .font(.system(.largeTitle))
-                .padding()
-            
-            Button {
-                loadAnimal()
-            } label: {
-                Text("Tap me")
+            if store.state.animal.fetchInProcess {
+                ProgressView("Fetching Animal...")
+            } else {
+                Text(store.state.animal.current)
+                    .font(.system(.largeTitle))
+                    .padding()
+                
+                Button {
+                    loadAnimal()
+                } label: {
+                    Text("Tap me")
+                }
             }
         }
         .onAppear {
