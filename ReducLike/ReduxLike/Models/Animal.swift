@@ -9,4 +9,6 @@ import Foundation
 
 struct Animal {
     var current: String = ""
+    var fetchError: String?
+    var fetchInProcess: Bool = false
 }

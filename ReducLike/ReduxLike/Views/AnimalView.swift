@@ -28,7 +28,7 @@ struct AnimalView: View {
     }
     
     private func loadAnimal() {
-        store.dispatch(.animal(action: .fetchAnimal))
+        store.dispatch(.animal(action: .fetch))
     }
 }
 
