@@ -20,7 +20,14 @@ func animalMiddleware(service: AnimalService) -> Middleware<State, Action> {
             return service.generateAnimalInTheFuture()
                 .subscribe(on: DispatchQueue.main)
                 .map { Action.animal(action: .fetchComplete(animal: $0)) }
-                .replaceError(with: Action.animal(action: .fetchComplete(animal: "Oops!")))
+                .catch { (error: AnimalServiceError) -> Just<Action> in
+                    switch error {
+                    case .unknown:
+                        return Just(Action.animal(action: .fetchComplete(animal: "Oops")))
+                    case .networkError:
+                        return Just(Action.animal(action: .fetchComplete(animal: "Network Failed")))
+                    }
+                }
                 .eraseToAnyPublisher()
         default:
             break
