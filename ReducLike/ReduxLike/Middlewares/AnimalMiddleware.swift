@@ -12,8 +12,7 @@ func animalMiddleware(service: AnimalService) -> Middleware<State, Action> {
     { state, action in
         switch action {
         case .animal(action: .fetchAnimal):
-            return service
-                .generateAnimalInTheFuture()
+            return service.generateAnimalInTheFuture()
                 .subscribe(on: DispatchQueue.main)
                 .map { Action.animal(action: .setCurrentAnimal(animal: $0)) }
                 .eraseToAnyPublisher()

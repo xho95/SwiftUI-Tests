@@ -19,6 +19,6 @@ struct AnimalService {
                 promise(.success(result))
             }
         }
-        .eraseToAnyPublisher()
+        .eraseToAnyPublisher()        
     }
 }

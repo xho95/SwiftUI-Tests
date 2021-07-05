@@ -18,9 +18,9 @@ final class Store<State, Action>: ObservableObject {
     private let middlewares: [Middleware<State, Action>]
     private var middlewareCancellables: Set<AnyCancellable> = []
     
-    private let serialQueue = DispatchQueue(label: "redux.serial.queue")
+    // private let serialQueue = DispatchQueue(label: "redux.serial.queue")
     
-    var tasks = [AnyCancellable]()
+    // var tasks = [AnyCancellable]()
     
     init(state: State,
          reducer: @escaping Reducer<State, Action>,
