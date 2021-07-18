@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1631280926A466EC002C4C7F /* ReduxSelfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163127F626A466EA002C4C7F /* ReduxSelfApp.swift */; };
+		1631280A26A466EC002C4C7F /* ReduxSelfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163127F626A466EA002C4C7F /* ReduxSelfApp.swift */; };
+		1631280B26A466EC002C4C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163127F726A466EA002C4C7F /* ContentView.swift */; };
+		1631280C26A466EC002C4C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163127F726A466EA002C4C7F /* ContentView.swift */; };
+		1631280D26A466EC002C4C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163127F826A466EC002C4C7F /* Assets.xcassets */; };
+		1631280E26A466EC002C4C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163127F826A466EC002C4C7F /* Assets.xcassets */; };
+		1631281B26A4673F002C4C7F /* Even.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281A26A4673F002C4C7F /* Even.swift */; };
+		1631281D26A46772002C4C7F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281C26A46772002C4C7F /* AppState.swift */; };
+		1631281F26A4683B002C4C7F /* Statable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281E26A4683B002C4C7F /* Statable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		163127F626A466EA002C4C7F /* ReduxSelfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSelfApp.swift; sourceTree = "<group>"; };
+		163127F726A466EA002C4C7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		163127F826A466EC002C4C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		163127FD26A466EC002C4C7F /* ReduxSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1631280026A466EC002C4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1631280526A466EC002C4C7F /* ReduxSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1631280726A466EC002C4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1631280826A466EC002C4C7F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1631281A26A4673F002C4C7F /* Even.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Even.swift; sourceTree = "<group>"; };
+		1631281C26A46772002C4C7F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1631281E26A4683B002C4C7F /* Statable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		163127FA26A466EC002C4C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1631280226A466EC002C4C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		163127F026A466EA002C4C7F = {
+			isa = PBXGroup;
+			children = (
+				163127F526A466EA002C4C7F /* Shared */,
+				163127FF26A466EC002C4C7F /* iOS */,
+				1631280626A466EC002C4C7F /* macOS */,
+				163127FE26A466EC002C4C7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		163127F526A466EA002C4C7F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				163127F626A466EA002C4C7F /* ReduxSelfApp.swift */,
+				1631281726A466FE002C4C7F /* Redux */,
+				1631281926A46727002C4C7F /* Model */,
+				1631281826A4670B002C4C7F /* View */,
+				163127F826A466EC002C4C7F /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		163127FE26A466EC002C4C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				163127FD26A466EC002C4C7F /* ReduxSelf.app */,
+				1631280526A466EC002C4C7F /* ReduxSelf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		163127FF26A466EC002C4C7F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1631280026A466EC002C4C7F /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1631280626A466EC002C4C7F /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				1631280726A466EC002C4C7F /* Info.plist */,
+				1631280826A466EC002C4C7F /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		1631281726A466FE002C4C7F /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				1631281E26A4683B002C4C7F /* Statable.swift */,
+				1631281C26A46772002C4C7F /* AppState.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		1631281826A4670B002C4C7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				163127F726A466EA002C4C7F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1631281926A46727002C4C7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1631281A26A4673F002C4C7F /* Even.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		163127FC26A466EC002C4C7F /* ReduxSelf (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1631281126A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (iOS)" */;
+			buildPhases = (
+				163127F926A466EC002C4C7F /* Sources */,
+				163127FA26A466EC002C4C7F /* Frameworks */,
+				163127FB26A466EC002C4C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReduxSelf (iOS)";
+			productName = "ReduxSelf (iOS)";
+			productReference = 163127FD26A466EC002C4C7F /* ReduxSelf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1631280426A466EC002C4C7F /* ReduxSelf (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1631281426A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (macOS)" */;
+			buildPhases = (
+				1631280126A466EC002C4C7F /* Sources */,
+				1631280226A466EC002C4C7F /* Frameworks */,
+				1631280326A466EC002C4C7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReduxSelf (macOS)";
+			productName = "ReduxSelf (macOS)";
+			productReference = 1631280526A466EC002C4C7F /* ReduxSelf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		163127F126A466EA002C4C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					163127FC26A466EC002C4C7F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					1631280426A466EC002C4C7F = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 163127F426A466EA002C4C7F /* Build configuration list for PBXProject "ReduxSelf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 163127F026A466EA002C4C7F;
+			productRefGroup = 163127FE26A466EC002C4C7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				163127FC26A466EC002C4C7F /* ReduxSelf (iOS) */,
+				1631280426A466EC002C4C7F /* ReduxSelf (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		163127FB26A466EC002C4C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1631280D26A466EC002C4C7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1631280326A466EC002C4C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1631280E26A466EC002C4C7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		163127F926A466EC002C4C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1631280B26A466EC002C4C7F /* ContentView.swift in Sources */,
+				1631281F26A4683B002C4C7F /* Statable.swift in Sources */,
+				1631280926A466EC002C4C7F /* ReduxSelfApp.swift in Sources */,
+				1631281B26A4673F002C4C7F /* Even.swift in Sources */,
+				1631281D26A46772002C4C7F /* AppState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1631280126A466EC002C4C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1631280C26A466EC002C4C7F /* ContentView.swift in Sources */,
+				1631280A26A466EC002C4C7F /* ReduxSelfApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1631280F26A466EC002C4C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1631281026A466EC002C4C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1631281226A466EC002C4C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
+				PRODUCT_NAME = ReduxSelf;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1631281326A466EC002C4C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
+				PRODUCT_NAME = ReduxSelf;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1631281526A466EC002C4C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
+				PRODUCT_NAME = ReduxSelf;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1631281626A466EC002C4C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
+				PRODUCT_NAME = ReduxSelf;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		163127F426A466EA002C4C7F /* Build configuration list for PBXProject "ReduxSelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1631280F26A466EC002C4C7F /* Debug */,
+				1631281026A466EC002C4C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1631281126A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1631281226A466EC002C4C7F /* Debug */,
+				1631281326A466EC002C4C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1631281426A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1631281526A466EC002C4C7F /* Debug */,
+				1631281626A466EC002C4C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 163127F126A466EA002C4C7F /* Project object */;
+}
