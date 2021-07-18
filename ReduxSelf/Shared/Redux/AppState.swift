@@ -11,6 +11,7 @@ typealias AppStateReducer = Reducer<AppState, AppState.Action>
 
 struct AppState: Statable {
     var number: Int
+    var even: Even
     
     let reducer: AppStateReducer
     
