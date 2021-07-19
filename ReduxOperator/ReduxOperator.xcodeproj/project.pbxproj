@@ -13,23 +13,27 @@
 		1631280C26A466EC002C4C7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163127F726A466EA002C4C7F /* ContentView.swift */; };
 		1631280D26A466EC002C4C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163127F826A466EC002C4C7F /* Assets.xcassets */; };
 		1631280E26A466EC002C4C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163127F826A466EC002C4C7F /* Assets.xcassets */; };
-		1631281B26A4673F002C4C7F /* Even.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281A26A4673F002C4C7F /* Even.swift */; };
+		1631281B26A4673F002C4C7F /* EvenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281A26A4673F002C4C7F /* EvenState.swift */; };
 		1631281D26A46772002C4C7F /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281C26A46772002C4C7F /* AppState.swift */; };
 		1631281F26A4683B002C4C7F /* Statable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631281E26A4683B002C4C7F /* Statable.swift */; };
+		1631282126A547C3002C4C7F /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631282026A547C3002C4C7F /* AppStore.swift */; };
+		1631282326A5482A002C4C7F /* AppStateMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631282226A5482A002C4C7F /* AppStateMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		163127F626A466EA002C4C7F /* ReduxSelfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSelfApp.swift; sourceTree = "<group>"; };
 		163127F726A466EA002C4C7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		163127F826A466EC002C4C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		163127FD26A466EC002C4C7F /* ReduxSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		163127FD26A466EC002C4C7F /* ReduxOperator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxOperator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1631280026A466EC002C4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1631280526A466EC002C4C7F /* ReduxSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1631280526A466EC002C4C7F /* ReduxOperator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxOperator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1631280726A466EC002C4C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1631280826A466EC002C4C7F /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		1631281A26A4673F002C4C7F /* Even.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Even.swift; sourceTree = "<group>"; };
+		1631281A26A4673F002C4C7F /* EvenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenState.swift; sourceTree = "<group>"; };
 		1631281C26A46772002C4C7F /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1631281E26A4683B002C4C7F /* Statable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statable.swift; sourceTree = "<group>"; };
+		1631282026A547C3002C4C7F /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		1631282226A5482A002C4C7F /* AppStateMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +79,8 @@
 		163127FE26A466EC002C4C7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				163127FD26A466EC002C4C7F /* ReduxSelf.app */,
-				1631280526A466EC002C4C7F /* ReduxSelf.app */,
+				163127FD26A466EC002C4C7F /* ReduxOperator.app */,
+				1631280526A466EC002C4C7F /* ReduxOperator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +107,8 @@
 			children = (
 				1631281E26A4683B002C4C7F /* Statable.swift */,
 				1631281C26A46772002C4C7F /* AppState.swift */,
+				1631282026A547C3002C4C7F /* AppStore.swift */,
+				1631282226A5482A002C4C7F /* AppStateMiddleware.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -118,7 +124,7 @@
 		1631281926A46727002C4C7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1631281A26A4673F002C4C7F /* Even.swift */,
+				1631281A26A4673F002C4C7F /* EvenState.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		163127FC26A466EC002C4C7F /* ReduxSelf (iOS) */ = {
+		163127FC26A466EC002C4C7F /* ReduxOperator (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1631281126A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (iOS)" */;
+			buildConfigurationList = 1631281126A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxOperator (iOS)" */;
 			buildPhases = (
 				163127F926A466EC002C4C7F /* Sources */,
 				163127FA26A466EC002C4C7F /* Frameworks */,
@@ -138,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = "ReduxSelf (iOS)";
+			name = "ReduxOperator (iOS)";
 			productName = "ReduxSelf (iOS)";
-			productReference = 163127FD26A466EC002C4C7F /* ReduxSelf.app */;
+			productReference = 163127FD26A466EC002C4C7F /* ReduxOperator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1631280426A466EC002C4C7F /* ReduxSelf (macOS) */ = {
+		1631280426A466EC002C4C7F /* ReduxOperator (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1631281426A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (macOS)" */;
+			buildConfigurationList = 1631281426A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxOperator (macOS)" */;
 			buildPhases = (
 				1631280126A466EC002C4C7F /* Sources */,
 				1631280226A466EC002C4C7F /* Frameworks */,
@@ -155,9 +161,9 @@
 			);
 			dependencies = (
 			);
-			name = "ReduxSelf (macOS)";
+			name = "ReduxOperator (macOS)";
 			productName = "ReduxSelf (macOS)";
-			productReference = 1631280526A466EC002C4C7F /* ReduxSelf.app */;
+			productReference = 1631280526A466EC002C4C7F /* ReduxOperator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +183,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 163127F426A466EA002C4C7F /* Build configuration list for PBXProject "ReduxSelf" */;
+			buildConfigurationList = 163127F426A466EA002C4C7F /* Build configuration list for PBXProject "ReduxOperator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,8 +196,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				163127FC26A466EC002C4C7F /* ReduxSelf (iOS) */,
-				1631280426A466EC002C4C7F /* ReduxSelf (macOS) */,
+				163127FC26A466EC002C4C7F /* ReduxOperator (iOS) */,
+				1631280426A466EC002C4C7F /* ReduxOperator (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -220,10 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1631282326A5482A002C4C7F /* AppStateMiddleware.swift in Sources */,
 				1631280B26A466EC002C4C7F /* ContentView.swift in Sources */,
 				1631281F26A4683B002C4C7F /* Statable.swift in Sources */,
 				1631280926A466EC002C4C7F /* ReduxSelfApp.swift in Sources */,
-				1631281B26A4673F002C4C7F /* Even.swift in Sources */,
+				1631282126A547C3002C4C7F /* AppStore.swift in Sources */,
+				1631281B26A4673F002C4C7F /* EvenState.swift in Sources */,
 				1631281D26A46772002C4C7F /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,8 +373,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
-				PRODUCT_NAME = ReduxSelf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxOperator;
+				PRODUCT_NAME = ReduxOperator;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,8 +395,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
-				PRODUCT_NAME = ReduxSelf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxOperator;
+				PRODUCT_NAME = ReduxOperator;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,7 +422,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
-				PRODUCT_NAME = ReduxSelf;
+				PRODUCT_NAME = ReduxOperator;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -438,7 +446,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.ReduxSelf;
-				PRODUCT_NAME = ReduxSelf;
+				PRODUCT_NAME = ReduxOperator;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -447,7 +455,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		163127F426A466EA002C4C7F /* Build configuration list for PBXProject "ReduxSelf" */ = {
+		163127F426A466EA002C4C7F /* Build configuration list for PBXProject "ReduxOperator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1631280F26A466EC002C4C7F /* Debug */,
@@ -456,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1631281126A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (iOS)" */ = {
+		1631281126A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxOperator (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1631281226A466EC002C4C7F /* Debug */,
@@ -465,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1631281426A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxSelf (macOS)" */ = {
+		1631281426A466EC002C4C7F /* Build configuration list for PBXNativeTarget "ReduxOperator (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1631281526A466EC002C4C7F /* Debug */,

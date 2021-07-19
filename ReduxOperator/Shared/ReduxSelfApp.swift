@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ReduxSelfApp: App {
+    @StateObject private var store = ReduxSelfStore(initial: AppState())
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
     }
 }

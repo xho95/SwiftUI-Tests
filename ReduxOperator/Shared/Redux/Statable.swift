@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias Reducer<State, Action> = (Action) -> State
+typealias Reducer<State, Action> = (State, Action) -> State
 
 protocol Statable {
     associatedtype Action
