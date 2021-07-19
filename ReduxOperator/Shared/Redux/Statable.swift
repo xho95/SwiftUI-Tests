@@ -9,8 +9,11 @@ import Foundation
 
 typealias Reducer<State, Action> = (State, Action) -> State
 
+infix operator <-
+
 protocol Statable {
     associatedtype Action
     
     var reducer: Reducer<Self, Action> { get }
 }
+

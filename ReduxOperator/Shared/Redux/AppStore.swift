@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-typealias ReduxSelfStore = AppStore<AppState>
+typealias ReduxOperatorStore = AppStore<AppState>
 
 class AppStore<State>: ObservableObject where State: Statable {
     typealias Action = State.Action

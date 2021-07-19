@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var store: ReduxOperatorStore
     var body: some View {
-        Text("Hello, world!")
+        Text("\(store.state.number), \(store.state.evenState.isTrue ? "Even" : "Odd")")
             .padding()
+
+        Button("Increase") {
+            store.dispatch(.increase)
+        }
+        .padding()
+        .background(Color.yellow)
+        .padding()
+        
+        Button("Increase") {
+            store.dispatch(.decrease)
+        }
+        .padding()
+        .background(Color.red)
+        .padding()
     }
 }
 

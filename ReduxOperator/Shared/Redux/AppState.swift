@@ -35,8 +35,20 @@ let appStateReducer: AppStateReducer = { state, action in
     switch action {
     case .increase:
         mutatingState.number += 1
+        if mutatingState.number % 2 == 0 {
+            mutatingState.evenState <- .makeEven
+            //mutatingState.evenState = state.evenState.reducer(state.evenState, .makeEven)
+        } else {
+            mutatingState.evenState <- .makeOdd
+            //mutatingState.evenState = state.evenState.reducer(state.evenState, .makeOdd)
+        }
     case .decrease:
         mutatingState.number -= 1
+        if mutatingState.number % 2 == 0 {
+            mutatingState.evenState = mutatingState.evenState.reducer(mutatingState.evenState, .makeEven)
+        } else {
+            mutatingState.evenState = mutatingState.evenState.reducer(mutatingState.evenState, .makeOdd)
+        }
     }
     
     return mutatingState
