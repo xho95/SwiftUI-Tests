@@ -14,7 +14,6 @@ struct StopWatch: View {
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     var body: some View {
-
         Text(timerString)
             .font(Font.system(.largeTitle, design: .monospaced))
             .onReceive(timer) { _ in
