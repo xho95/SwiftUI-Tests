@@ -8,42 +8,62 @@
 import SwiftUI
 
 struct ScheduledTimer: View {
-    @State private var timeInterval = TimeInterval()
-    @State private var currentInterval = TimeInterval()
+    @State private var newInterval = TimeInterval()
+    @State private var oldInterval = TimeInterval()
 
     @State var isTimerRunning = false
-    @State private var startTime =  Date()
-    @State private var timerString = "0.0"
     @State private var timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { _ in }
 
     var body: some View {
-        Text(timerString)
-            .font(Font.system(.largeTitle, design: .monospaced))
-            .onTapGesture {
-                if isTimerRunning {
-                    print("timeInterval: \(timeInterval)")
+        VStack {
+            Text(String(format: "%.0f", newInterval))
+                .font(Font.system(.largeTitle, design: .monospaced))
+                .onAppear() {
                     stopTimer()
-                } else {
-                    startTimer()
                 }
-                isTimerRunning.toggle()
+            
+            Button {
+                startTimer()
+            } label: {
+                Text("Start")
+                    .padding()
             }
-            .onAppear() {
+            .background(Color.yellow)
+            .cornerRadius(10)
+            .padding()
+            
+            Button {
                 stopTimer()
+            } label: {
+                Text("Stop")
+                    .padding()
             }
+            .background(Color.yellow)
+            .cornerRadius(10)
+            .padding()
+        }
     }
     
     func stopTimer() {
+        guard isTimerRunning == true else { return }
+        
         timer.invalidate()
-        currentInterval = timeInterval
+        print("timeInterval: \(newInterval)")
+        oldInterval = newInterval
+
+        isTimerRunning = false
     }
     
     func startTimer() {
-        startTime = Date()
+        guard isTimerRunning == false else { return }
+
+        let startTime = Date()
+
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
-            timeInterval = currentInterval + Date().timeIntervalSince(startTime)
-            timerString = String(format: "%.1f", timeInterval)
+            newInterval = oldInterval + Date().timeIntervalSince(startTime)
         }
+
+        isTimerRunning = true
     }
 }
 
