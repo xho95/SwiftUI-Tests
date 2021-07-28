@@ -12,7 +12,7 @@ struct IntervalStopWatch: View {
     @State private var currentInterval = TimeInterval()
 
     @State var isTimerRunning = false
-    @State private var startTime =  Date()
+    @State private var startTime = Date()
     @State private var timerString = "0.0"
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -29,12 +29,10 @@ struct IntervalStopWatch: View {
                 .onTapGesture {
                     if isTimerRunning {
                         print("timeInterval: \(timeInterval)")
-                        currentInterval = timeInterval
                         stopTimer()
                     } else {
                         //timerString = "0.00"
-                        print("currentInterval: \(currentInterval)")
-                        startTime = Date()
+                        //print("currentInterval: \(currentInterval)")
                         startTimer()
                     }
                     isTimerRunning.toggle()
@@ -47,21 +45,31 @@ struct IntervalStopWatch: View {
                 startTimer()
             } label: {
                 Text("Start")
+                    .padding()
             }
+            .background(Color.yellow)
+            .cornerRadius(10)
+            .padding()
             
             Button {
                 stopTimer()
             } label: {
                 Text("Stop")
+                    .padding()
             }
+            .background(Color.yellow)
+            .cornerRadius(10)
+            .padding()
         }
     }
     
     func stopTimer() {
         timer.upstream.connect().cancel()
+        currentInterval = timeInterval
     }
     
     func startTimer() {
+        startTime = Date()
         timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()
     }
 }

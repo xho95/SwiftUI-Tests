@@ -30,6 +30,9 @@ struct SimpleTimer: View {
                     self.counter += 1
                     self.date = time
                 }
+                .onAppear {
+                    self.timer.upstream.connect().cancel()
+                }
                 .padding()
         }
     }

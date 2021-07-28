@@ -21,6 +21,12 @@ struct Timers: View {
             IntervalStopWatch()
                 .tabItem { Image(systemName: "timer") }
                 .tag(2)
+            SubscribeTimer()
+                .tabItem { Image(systemName: "timer.square") }
+                .tag(3)
+            ScheduledTimer()
+                .tabItem { Image(systemName: "calendar.circle") }
+                .tag(4)
         }
     }
 }

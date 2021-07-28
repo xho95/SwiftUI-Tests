@@ -10,6 +10,8 @@
 		1631286A26ACF670002C4C7F /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631286926ACF670002C4C7F /* StopWatch.swift */; };
 		1631286C26ACF6CA002C4C7F /* IntervalStopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631286B26ACF6CA002C4C7F /* IntervalStopWatch.swift */; };
 		1631286E26ACF776002C4C7F /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631286D26ACF776002C4C7F /* Timers.swift */; };
+		1631287026AD753C002C4C7F /* SubscribeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631286F26AD753C002C4C7F /* SubscribeTimer.swift */; };
+		1631287226B12A75002C4C7F /* ScheduledTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631287126B12A75002C4C7F /* ScheduledTimer.swift */; };
 		16935C5F2615E91500C33BA9 /* TimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16935C5E2615E91500C33BA9 /* TimerApp.swift */; };
 		16935C612615E91500C33BA9 /* SimpleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16935C602615E91500C33BA9 /* SimpleTimer.swift */; };
 		16935C632615E91600C33BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16935C622615E91600C33BA9 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		1631286926ACF670002C4C7F /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		1631286B26ACF6CA002C4C7F /* IntervalStopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalStopWatch.swift; sourceTree = "<group>"; };
 		1631286D26ACF776002C4C7F /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
+		1631286F26AD753C002C4C7F /* SubscribeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTimer.swift; sourceTree = "<group>"; };
+		1631287126B12A75002C4C7F /* ScheduledTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledTimer.swift; sourceTree = "<group>"; };
 		16935C5B2615E91500C33BA9 /* Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16935C5E2615E91500C33BA9 /* TimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApp.swift; sourceTree = "<group>"; };
 		16935C602615E91500C33BA9 /* SimpleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimer.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				16935C602615E91500C33BA9 /* SimpleTimer.swift */,
 				1631286926ACF670002C4C7F /* StopWatch.swift */,
 				1631286B26ACF6CA002C4C7F /* IntervalStopWatch.swift */,
+				1631286F26AD753C002C4C7F /* SubscribeTimer.swift */,
+				1631287126B12A75002C4C7F /* ScheduledTimer.swift */,
 				16935C622615E91600C33BA9 /* Assets.xcassets */,
 				16935C672615E91600C33BA9 /* Info.plist */,
 				16935C642615E91600C33BA9 /* Preview Content */,
@@ -149,6 +155,8 @@
 			files = (
 				1631286C26ACF6CA002C4C7F /* IntervalStopWatch.swift in Sources */,
 				1631286A26ACF670002C4C7F /* StopWatch.swift in Sources */,
+				1631287226B12A75002C4C7F /* ScheduledTimer.swift in Sources */,
+				1631287026AD753C002C4C7F /* SubscribeTimer.swift in Sources */,
 				16935C612615E91500C33BA9 /* SimpleTimer.swift in Sources */,
 				16935C5F2615E91500C33BA9 /* TimerApp.swift in Sources */,
 				1631286E26ACF776002C4C7F /* Timers.swift in Sources */,
