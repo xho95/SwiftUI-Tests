@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16237ABA26BCD725001D1F9F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16237AB926BCD725001D1F9F /* GameKit.framework */; };
+		168F768B26BCFCF900BC04BA /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168F768A26BCFCF900BC04BA /* GameCenterManager.swift */; };
+		168F768C26BCFCF900BC04BA /* GameCenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168F768A26BCFCF900BC04BA /* GameCenterManager.swift */; };
 		16DAE7C326BBB9B900028DE8 /* AuthenticateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DAE7B026BBB9B500028DE8 /* AuthenticateApp.swift */; };
 		16DAE7C426BBB9B900028DE8 /* AuthenticateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DAE7B026BBB9B500028DE8 /* AuthenticateApp.swift */; };
 		16DAE7C526BBB9B900028DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DAE7B126BBB9B500028DE8 /* ContentView.swift */; };
@@ -18,12 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16237AB926BCD725001D1F9F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		168F768A26BCFCF900BC04BA /* GameCenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterManager.swift; sourceTree = "<group>"; };
+		168F768D26BCFDC500BC04BA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16DAE7B026BBB9B500028DE8 /* AuthenticateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateApp.swift; sourceTree = "<group>"; };
 		16DAE7B126BBB9B500028DE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16DAE7B226BBB9B900028DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		16DAE7B726BBB9B900028DE8 /* Authenticate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authenticate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DAE7B726BBB9B900028DE8 /* AuthenticateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DAE7BA26BBB9B900028DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16DAE7BF26BBB9B900028DE8 /* Authenticate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authenticate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DAE7BF26BBB9B900028DE8 /* AuthenticateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthenticateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DAE7C126BBB9B900028DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16DAE7C226BBB9B900028DE8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		16DAE7D126BBBAAA00028DE8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -34,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16237ABA26BCD725001D1F9F /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +54,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16237AB826BCD725001D1F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16237AB926BCD725001D1F9F /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		16DAE7AA26BBB9B500028DE8 = {
 			isa = PBXGroup;
 			children = (
+				168F768D26BCFDC500BC04BA /* README.md */,
 				16DAE7AF26BBB9B500028DE8 /* Shared */,
 				16DAE7B926BBB9B900028DE8 /* iOS */,
 				16DAE7C026BBB9B900028DE8 /* macOS */,
 				16DAE7B826BBB9B900028DE8 /* Products */,
+				16237AB826BCD725001D1F9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				16DAE7B026BBB9B500028DE8 /* AuthenticateApp.swift */,
-				16DAE7B126BBB9B500028DE8 /* ContentView.swift */,
 				16DAE7D126BBBAAA00028DE8 /* MenuView.swift */,
+				16DAE7B126BBB9B500028DE8 /* ContentView.swift */,
+				168F768A26BCFCF900BC04BA /* GameCenterManager.swift */,
 				16DAE7B226BBB9B900028DE8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -71,8 +89,8 @@
 		16DAE7B826BBB9B900028DE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16DAE7B726BBB9B900028DE8 /* Authenticate.app */,
-				16DAE7BF26BBB9B900028DE8 /* Authenticate.app */,
+				16DAE7B726BBB9B900028DE8 /* AuthenticateTest.app */,
+				16DAE7BF26BBB9B900028DE8 /* AuthenticateTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		16DAE7B626BBB9B900028DE8 /* Authenticate (iOS) */ = {
+		16DAE7B626BBB9B900028DE8 /* AuthenticateTest (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16DAE7CB26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "Authenticate (iOS)" */;
+			buildConfigurationList = 16DAE7CB26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "AuthenticateTest (iOS)" */;
 			buildPhases = (
 				16DAE7B326BBB9B900028DE8 /* Sources */,
 				16DAE7B426BBB9B900028DE8 /* Frameworks */,
@@ -109,14 +127,14 @@
 			);
 			dependencies = (
 			);
-			name = "Authenticate (iOS)";
+			name = "AuthenticateTest (iOS)";
 			productName = "Authenticate (iOS)";
-			productReference = 16DAE7B726BBB9B900028DE8 /* Authenticate.app */;
+			productReference = 16DAE7B726BBB9B900028DE8 /* AuthenticateTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		16DAE7BE26BBB9B900028DE8 /* Authenticate (macOS) */ = {
+		16DAE7BE26BBB9B900028DE8 /* AuthenticateTest (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16DAE7CE26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "Authenticate (macOS)" */;
+			buildConfigurationList = 16DAE7CE26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "AuthenticateTest (macOS)" */;
 			buildPhases = (
 				16DAE7BB26BBB9B900028DE8 /* Sources */,
 				16DAE7BC26BBB9B900028DE8 /* Frameworks */,
@@ -126,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = "Authenticate (macOS)";
+			name = "AuthenticateTest (macOS)";
 			productName = "Authenticate (macOS)";
-			productReference = 16DAE7BF26BBB9B900028DE8 /* Authenticate.app */;
+			productReference = 16DAE7BF26BBB9B900028DE8 /* AuthenticateTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +166,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16DAE7AE26BBB9B500028DE8 /* Build configuration list for PBXProject "Authenticate" */;
+			buildConfigurationList = 16DAE7AE26BBB9B500028DE8 /* Build configuration list for PBXProject "AuthenticateTest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,8 +179,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16DAE7B626BBB9B900028DE8 /* Authenticate (iOS) */,
-				16DAE7BE26BBB9B900028DE8 /* Authenticate (macOS) */,
+				16DAE7B626BBB9B900028DE8 /* AuthenticateTest (iOS) */,
+				16DAE7BE26BBB9B900028DE8 /* AuthenticateTest (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168F768B26BCFCF900BC04BA /* GameCenterManager.swift in Sources */,
 				16DAE7C526BBB9B900028DE8 /* ContentView.swift in Sources */,
 				16DAE7D226BBBAAA00028DE8 /* MenuView.swift in Sources */,
 				16DAE7C326BBB9B900028DE8 /* AuthenticateApp.swift in Sources */,
@@ -201,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168F768C26BCFCF900BC04BA /* GameCenterManager.swift in Sources */,
 				16DAE7C626BBB9B900028DE8 /* ContentView.swift in Sources */,
 				16DAE7D326BBBAAA00028DE8 /* MenuView.swift in Sources */,
 				16DAE7C426BBB9B900028DE8 /* AuthenticateApp.swift in Sources */,
@@ -335,8 +355,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.Authenticate;
-				PRODUCT_NAME = Authenticate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.AuthenticateTest;
+				PRODUCT_NAME = AuthenticateTest;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,8 +377,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.Authenticate;
-				PRODUCT_NAME = Authenticate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.AuthenticateTest;
+				PRODUCT_NAME = AuthenticateTest;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,7 +404,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.Authenticate;
-				PRODUCT_NAME = Authenticate;
+				PRODUCT_NAME = AuthenticateTest;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -408,7 +428,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.Authenticate;
-				PRODUCT_NAME = Authenticate;
+				PRODUCT_NAME = AuthenticateTest;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -417,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16DAE7AE26BBB9B500028DE8 /* Build configuration list for PBXProject "Authenticate" */ = {
+		16DAE7AE26BBB9B500028DE8 /* Build configuration list for PBXProject "AuthenticateTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16DAE7C926BBB9B900028DE8 /* Debug */,
@@ -426,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16DAE7CB26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "Authenticate (iOS)" */ = {
+		16DAE7CB26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "AuthenticateTest (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16DAE7CC26BBB9B900028DE8 /* Debug */,
@@ -435,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16DAE7CE26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "Authenticate (macOS)" */ = {
+		16DAE7CE26BBB9B900028DE8 /* Build configuration list for PBXNativeTarget "AuthenticateTest (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16DAE7CF26BBB9B900028DE8 /* Debug */,

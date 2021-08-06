@@ -9,8 +9,6 @@ import SwiftUI
 import GameKit
 
 struct MenuView: View {
-    let localPlayer = GKLocalPlayer.local
-    
     var body: some View {
         NavigationView {
             NavigationLink(
@@ -19,20 +17,6 @@ struct MenuView: View {
             )
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .onAppear {
-            authenticateUser()
-        }
-    }
-    
-    func authenticateUser() {
-        localPlayer.authenticateHandler = { vc, error in
-            guard error == nil else {
-                print(error?.localizedDescription ?? "")
-                return
-            }
-            
-            GKAccessPoint.shared.isActive = localPlayer.isAuthenticated
-        }
     }
 }
 
