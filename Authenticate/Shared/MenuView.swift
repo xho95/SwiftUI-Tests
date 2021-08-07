@@ -10,13 +10,18 @@ import GameKit
 
 struct MenuView: View {
     var body: some View {
+        GameCenterManager()
+/*
         NavigationView {
             NavigationLink(
                 destination: ContentView(),
                 label: { Text("Show Content") }
             )
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationBarItems(
+            leading: GameCenterManager() //.ignoresSafeArea(edges: .top)
+        )
+ */
     }
 }
 

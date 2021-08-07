@@ -11,9 +11,8 @@ import SwiftUI
 struct AuthenticateApp: App {
     var body: some Scene {
         WindowGroup {
-            GameCenterManager()
-
             MenuView()
+                .statusBar(hidden: true)
         }
     }
 }

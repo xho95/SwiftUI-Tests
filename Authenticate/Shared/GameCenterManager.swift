@@ -11,8 +11,7 @@ import GameKit
 
 struct GameCenterManager: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> GameViewController {
-        let gameViewController = GameViewController()
-        return gameViewController
+        return GameViewController()
     }
     
     func updateUIViewController(_ uiViewController: GameViewController, context: Context) {
@@ -26,7 +25,13 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.insetsLayoutMarginsFromSafeArea = false
+        
         authenticateUser()
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        true
     }
     
     func authenticateUser() {
@@ -41,9 +46,10 @@ class GameViewController: UIViewController {
             }
             
             if #available(iOS 14.0, *) {
-                GKAccessPoint.shared.location = .topLeading
+                // GKAccessPoint.shared.location = .topLeading
                 GKAccessPoint.shared.showHighlights = true
-                GKAccessPoint.shared.isActive = self.localPlayer.isAuthenticated
+                GKAccessPoint.shared.isActive = false
+                // GKAccessPoint.shared.isActive = self.localPlayer.isAuthenticated
             }
         }
     }
