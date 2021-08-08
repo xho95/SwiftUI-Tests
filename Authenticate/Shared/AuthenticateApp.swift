@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct AuthenticateApp: App {
+    let manager = GameCenterManager()
+    
     var body: some Scene {
         WindowGroup {
             MenuView()
                 .statusBar(hidden: true)
+                .onAppear {
+                    manager.authenticate()
+                }
         }
     }
 }

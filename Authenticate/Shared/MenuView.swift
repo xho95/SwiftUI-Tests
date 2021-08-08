@@ -9,19 +9,28 @@ import SwiftUI
 import GameKit
 
 struct MenuView: View {
+    let localPlayer = GKLocalPlayer.local
+    
     var body: some View {
-        GameCenterManager()
-/*
         NavigationView {
-            NavigationLink(
-                destination: ContentView(),
-                label: { Text("Show Content") }
+            ZStack {
+                //GameCenterManager()
+                
+                NavigationLink(
+                    destination: ContentView(),
+                    label: { Text("Show Content") }
+                )
+                .ignoresSafeArea()
+            }
+            .navigationBarItems(
+                leading: Button {
+                    GKAccessPoint.shared.trigger(state: .dashboard) {}
+                } label: {
+                    //Image(systemName: "")
+                    Text("Game Center")
+                }
             )
         }
-        .navigationBarItems(
-            leading: GameCenterManager() //.ignoresSafeArea(edges: .top)
-        )
- */
     }
 }
 
