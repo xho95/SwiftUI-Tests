@@ -54,9 +54,9 @@ class GameViewController: UIViewController {
             if #available(iOS 14.0, *) {
                 // GKAccessPoint.shared.location = .topLeading
                 GKAccessPoint.shared.showHighlights = true
-                GKAccessPoint.shared.isActive = false // self.localPlayer.isAuthenticated
+                //GKAccessPoint.shared.isActive = false
+                GKAccessPoint.shared.isActive = self.localPlayer.isAuthenticated
             }
         }
     }
-
 }

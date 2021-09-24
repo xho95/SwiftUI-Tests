@@ -26,8 +26,15 @@ struct MenuView: View {
                 leading: Button {
                     GKAccessPoint.shared.trigger(state: .dashboard) {}
                 } label: {
-                    //Image(systemName: "")
-                    Text("Game Center")
+                    ZStack {
+                        Circle()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(.yellow)
+                        Image(systemName: "list.number")
+                            .font(.system(size: 25, weight: .medium, design: .default))
+                    }
+                    .offset(x: 0, y: -25)
+                    .shadow(radius: 5)
                 }
             )
         }
