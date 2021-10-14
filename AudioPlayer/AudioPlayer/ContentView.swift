@@ -49,6 +49,22 @@ struct ContentView: View {
             let sound = Bundle.main.path(forResource: "Battle_Ground", ofType: "mp3")
             self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
             self.audioPlayer.numberOfLoops = -1
+            
+            self.setAudioSession()
+        }
+    }
+    
+    func setAudioSession() {
+        // Get the singleton instance.
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            // Set the audio session category, mode, and options.
+            try audioSession.setCategory(.playback, mode: .default, options: [.mixWithOthers, .allowAirPlay])
+            print("Playback OK")
+            try audioSession.setActive(true)
+            print("Session is Active")
+        } catch {
+            print("Failed to set audio session category.")
         }
     }
 }

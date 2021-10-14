@@ -21,6 +21,7 @@
 		16CAAE6427084220004F1111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16CAAE6727084220004F1111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		16CAAE6F27084242004F1111 /* Battle_Ground.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Battle_Ground.mp3; path = ../../../BackgroundMusic/BackgroundMusic/Resources/Battle_Ground.mp3; sourceTree = "<group>"; };
+		16CAAE7127097F04004F1111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		16CAAE5F2708421F004F1111 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				16CAAE7127097F04004F1111 /* Info.plist */,
 				16CAAE6E2708422A004F1111 /* Resources */,
 				16CAAE602708421F004F1111 /* AudioPlayerApp.swift */,
 				16CAAE622708421F004F1111 /* ContentView.swift */,
@@ -284,6 +286,7 @@
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +317,7 @@
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AudioPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
