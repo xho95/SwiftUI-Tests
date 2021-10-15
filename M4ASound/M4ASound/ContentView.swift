@@ -13,13 +13,17 @@ struct ContentView: View {
 
     let url = Bundle.main.url(forResource: "Keyboard Key (0.34)", withExtension: "mp3")!
     
+    var audioPlayer: AVAudioPlayer?
+    
+    init() {
+        audioPlayer = try? AVAudioPlayer(contentsOf: url)
+
+        audioPlayer?.prepareToPlay()
+    }
+
     var body: some View {
         Button {
-            do {
-                try play(url)
-            } catch {
-                print("\(error)")
-            }
+            async let _ = audioPlayer?.play()
         } label: {
             Text("Hello, world!")
                 .padding()
