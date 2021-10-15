@@ -6,16 +6,41 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    @State var sound: SystemSoundID
+//    @State var effectPlayer: AVAudioPlayer
+//    @State var swish = SystemSoundID()
+//
+//    init() {
+//        //            let effectPath = Bundle.main.path(forResource: "QuickSwishTrim", ofType: "mp3")!
+//        //            let effectURL = URL(fileURLWithPath: effectPath)
+//        effectPlayer = try! AVAudioPlayer(
+//            contentsOf: Bundle.main.url(forResource: "Quick Swinging Swish (0.5)", withExtension: "mp3")!
+//        )
+//    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button {
+//            async let _ = effectPlayer.play()
+            async let _ = AudioServicesPlaySystemSound(sound)
+        } label: {
+            Text("Hello, world!")
+                .padding()
+//                .onAppear {
+//                    AudioServicesCreateSystemSoundID(url, &sound)
+//                }
+        }
     }
+    
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+func sound() {
+    var sound = SystemSoundID()
+    
+    AudioServicesCreateSystemSoundID(Bundle.main.url(
+            forResource: "Keyboard Key (0.34)", withExtension: "mp3")! as CFURL,
+        &sound)
+    AudioServicesPlaySystemSound(sound)
 }

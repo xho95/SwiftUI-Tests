@@ -11,6 +11,8 @@
 		16BA47692717F43F0058E5BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA47682717F43F0058E5BE /* ContentView.swift */; };
 		16BA476B2717F4430058E5BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BA476A2717F4430058E5BE /* Assets.xcassets */; };
 		16BA476E2717F4430058E5BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16BA476D2717F4430058E5BE /* Preview Assets.xcassets */; };
+		16BA47772718079B0058E5BE /* Quick Swinging Swish (0.5).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16BA47762718079B0058E5BE /* Quick Swinging Swish (0.5).mp3 */; };
+		16BA477B271813A70058E5BE /* Keyboard Key (0.34).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16BA477A271813A70058E5BE /* Keyboard Key (0.34).mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +21,11 @@
 		16BA47682717F43F0058E5BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16BA476A2717F4430058E5BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16BA476D2717F4430058E5BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		16BA47742717F4520058E5BE /* QuickSwishTrim.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuickSwishTrim.m4a; sourceTree = "<group>"; };
+		16BA4775271805150058E5BE /* QuickSwishTrim.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = QuickSwishTrim.mp3; sourceTree = "<group>"; };
+		16BA47762718079B0058E5BE /* Quick Swinging Swish (0.5).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Quick Swinging Swish (0.5).mp3"; sourceTree = "<group>"; };
+		16BA4778271811F00058E5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		16BA4779271812540058E5BE /* Keyboard Key (0.29).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Keyboard Key (0.29).mp3"; sourceTree = "<group>"; };
+		16BA477A271813A70058E5BE /* Keyboard Key (0.34).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Keyboard Key (0.34).mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +58,14 @@
 		16BA47652717F43F0058E5BE /* M4ASound */ = {
 			isa = PBXGroup;
 			children = (
+				16BA4778271811F00058E5BE /* Info.plist */,
 				16BA47662717F43F0058E5BE /* M4ASoundApp.swift */,
 				16BA47682717F43F0058E5BE /* ContentView.swift */,
 				16BA476A2717F4430058E5BE /* Assets.xcassets */,
-				16BA47742717F4520058E5BE /* QuickSwishTrim.m4a */,
+				16BA4775271805150058E5BE /* QuickSwishTrim.mp3 */,
+				16BA47762718079B0058E5BE /* Quick Swinging Swish (0.5).mp3 */,
+				16BA4779271812540058E5BE /* Keyboard Key (0.29).mp3 */,
+				16BA477A271813A70058E5BE /* Keyboard Key (0.34).mp3 */,
 				16BA476C2717F4430058E5BE /* Preview Content */,
 			);
 			path = M4ASound;
@@ -128,7 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16BA476E2717F4430058E5BE /* Preview Assets.xcassets in Resources */,
+				16BA477B271813A70058E5BE /* Keyboard Key (0.34).mp3 in Resources */,
 				16BA476B2717F4430058E5BE /* Assets.xcassets in Resources */,
+				16BA47772718079B0058E5BE /* Quick Swinging Swish (0.5).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +286,7 @@
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = M4ASound/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +317,7 @@
 				DEVELOPMENT_TEAM = 6U792A794H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = M4ASound/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
