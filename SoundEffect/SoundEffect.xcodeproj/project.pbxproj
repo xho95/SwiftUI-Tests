@@ -11,6 +11,11 @@
 		16D04A3527AF9FD4003E5ED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D04A3427AF9FD4003E5ED9 /* ContentView.swift */; };
 		16D04A3727AF9FD6003E5ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A3627AF9FD6003E5ED9 /* Assets.xcassets */; };
 		16D04A3A27AF9FD6003E5ED9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A3927AF9FD6003E5ED9 /* Preview Assets.xcassets */; };
+		16D04A4627AFA85E003E5ED9 /* Number Key 01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A4127AFA85D003E5ED9 /* Number Key 01.m4a */; };
+		16D04A4727AFA85E003E5ED9 /* Delete Key 02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A4227AFA85D003E5ED9 /* Delete Key 02.m4a */; };
+		16D04A4827AFA85E003E5ED9 /* Delete Key 01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A4327AFA85D003E5ED9 /* Delete Key 01.m4a */; };
+		16D04A4927AFA85E003E5ED9 /* My Music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A4427AFA85E003E5ED9 /* My Music.m4a */; };
+		16D04A4A27AFA85E003E5ED9 /* Number Key 02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A4527AFA85E003E5ED9 /* Number Key 02.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		16D04A3427AF9FD4003E5ED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16D04A3627AF9FD6003E5ED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16D04A3927AF9FD6003E5ED9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16D04A4127AFA85D003E5ED9 /* Number Key 01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Number Key 01.m4a"; sourceTree = "<group>"; };
+		16D04A4227AFA85D003E5ED9 /* Delete Key 02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delete Key 02.m4a"; sourceTree = "<group>"; };
+		16D04A4327AFA85D003E5ED9 /* Delete Key 01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delete Key 01.m4a"; sourceTree = "<group>"; };
+		16D04A4427AFA85E003E5ED9 /* My Music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "My Music.m4a"; sourceTree = "<group>"; };
+		16D04A4527AFA85E003E5ED9 /* Number Key 02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Number Key 02.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,7 @@
 		16D04A3127AF9FD4003E5ED9 /* SoundEffect */ = {
 			isa = PBXGroup;
 			children = (
+				16D04A4027AFA175003E5ED9 /* Resources */,
 				16D04A3227AF9FD4003E5ED9 /* SoundEffectApp.swift */,
 				16D04A3427AF9FD4003E5ED9 /* ContentView.swift */,
 				16D04A3627AF9FD6003E5ED9 /* Assets.xcassets */,
@@ -65,6 +76,18 @@
 				16D04A3927AF9FD6003E5ED9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16D04A4027AFA175003E5ED9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16D04A4327AFA85D003E5ED9 /* Delete Key 01.m4a */,
+				16D04A4227AFA85D003E5ED9 /* Delete Key 02.m4a */,
+				16D04A4427AFA85E003E5ED9 /* My Music.m4a */,
+				16D04A4127AFA85D003E5ED9 /* Number Key 01.m4a */,
+				16D04A4527AFA85E003E5ED9 /* Number Key 02.m4a */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +149,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D04A3A27AF9FD6003E5ED9 /* Preview Assets.xcassets in Resources */,
+				16D04A4A27AFA85E003E5ED9 /* Number Key 02.m4a in Resources */,
+				16D04A4627AFA85E003E5ED9 /* Number Key 01.m4a in Resources */,
 				16D04A3727AF9FD6003E5ED9 /* Assets.xcassets in Resources */,
+				16D04A4827AFA85E003E5ED9 /* Delete Key 01.m4a in Resources */,
+				16D04A4727AFA85E003E5ED9 /* Delete Key 02.m4a in Resources */,
+				16D04A4927AFA85E003E5ED9 /* My Music.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
