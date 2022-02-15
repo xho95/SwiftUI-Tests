@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SoundEffectApp: App {
+    let effect = SoundManager.instance
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(effect: effect)
         }
     }
 }

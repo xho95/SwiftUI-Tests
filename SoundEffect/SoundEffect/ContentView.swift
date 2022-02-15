@@ -33,6 +33,7 @@ class SoundManager {
 }
 
 struct ContentView: View {
+    let effect: SoundManager
 //    @State var backgroundOn = true
     
 // Ver No. 2
@@ -69,14 +70,14 @@ struct ContentView: View {
             }
             
             Button {
-                SoundManager.instance.play(option: .delete)
+                effect.play(option: .delete)
             } label: {
                 Text("Delete!")
                     .padding()
             }
             
             Button {
-                SoundManager.instance.play(option: .number)
+                effect.play(option: .number)
             } label: {
                 Text("Number!")
                     .padding()
@@ -87,6 +88,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(effect: SoundManager.instance)
     }
 }
