@@ -8,44 +8,75 @@
 import SwiftUI
 import AVKit
 
-struct ContentView: View {
-    @State var backgroundOn = true
+class SoundManager {
+    static var instance = SoundManager()
     
-    var deleteEffect: AVAudioPlayer?
-    var keyEffect: AVAudioPlayer?
-
-    init() {
-        let keyEffectURL = Bundle.main.url(forResource: "Number Key 01", withExtension: "m4a")!
+    var player: AVAudioPlayer?
+    
+    func play(option: Option) {
+        guard let url = Bundle.main.url(forResource: option.rawValue, withExtension: "m4a") else { return }
         
-        keyEffect = try? AVAudioPlayer(contentsOf: keyEffectURL)
-        keyEffect?.prepareToPlay()
-
-        let deleteEffectURL = Bundle.main.url(forResource: "Delete Key 01", withExtension: "m4a")!
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.prepareToPlay()
+            player?.play()
+        } catch {
+            print("\(error.localizedDescription)")
+        }
         
-        deleteEffect = try? AVAudioPlayer(contentsOf: deleteEffectURL)
-        deleteEffect?.prepareToPlay()
     }
+    
+    enum Option: String {
+        case number = "Number Key 01"
+        case delete = "Delete Key 01"
+    }
+}
+
+struct ContentView: View {
+//    @State var backgroundOn = true
+    
+// Ver No. 2
+// ----------------------------------------------------------------
+//
+//    let deleteEffect = SoundEngine(fileName: "Delete Key 01")
+//    let keyEffect = SoundEngine(fileName: "Number Key 01")
+    
+// Ver No. 1
+// ----------------------------------------------------------------
+//
+//    var deleteEffect: AVAudioPlayer?
+//    var keyEffect: AVAudioPlayer?
+//
+//    init() {
+//        let keyEffectURL = Bundle.main.url(forResource: "Number Key 01", withExtension: "m4a")!
+//
+//        keyEffect = try? AVAudioPlayer(contentsOf: keyEffectURL)
+//        keyEffect?.prepareToPlay()
+//
+//        let deleteEffectURL = Bundle.main.url(forResource: "Delete Key 01", withExtension: "m4a")!
+//
+//        deleteEffect = try? AVAudioPlayer(contentsOf: deleteEffectURL)
+//        deleteEffect?.prepareToPlay()
+//    }
     
     var body: some View {
         VStack {
             Button {
                 // play an sound effect
             } label: {
-                Text(backgroundOn ? "Background Off" : "Background On")
+                Text("Background On")
                     .padding()
             }
             
             Button {
-                deleteEffect?.currentTime = 0
-                deleteEffect?.play()
+                SoundManager.instance.play(option: .delete)
             } label: {
                 Text("Delete!")
                     .padding()
             }
             
             Button {
-                keyEffect?.currentTime = 0
-                keyEffect?.play()
+                SoundManager.instance.play(option: .number)
             } label: {
                 Text("Number!")
                     .padding()

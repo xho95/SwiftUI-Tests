@@ -9,16 +9,12 @@ import Foundation
 import AVKit
 
 struct SoundEngine {
-//    let fileName: String
-    
     private let engine: AVAudioEngine
     private let player: AVAudioPlayerNode
 
     private var audioFile: AVAudioFile
 
     init(fileName: String = "Number Key 01") {
-//        self.fileName = fileName
-        
         self.engine = AVAudioEngine()
         self.player = AVAudioPlayerNode()
 
@@ -30,6 +26,9 @@ struct SoundEngine {
     }
     
     func play() {
+//        if player.isPlaying {
+//            player.reset()
+//        }
         player.scheduleFile(audioFile, at: nil)
         player.play()
     }
