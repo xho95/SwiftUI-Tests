@@ -8,39 +8,18 @@
 import SwiftUI
 import AVKit
 
-class SoundManager {
-    static var instance = SoundManager()
-    
-    var player: AVAudioPlayer?
-    
-    func play(option: Option) {
-        guard let url = Bundle.main.url(forResource: option.rawValue, withExtension: "m4a") else { return }
-        
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            player?.prepareToPlay()
-            player?.play()
-        } catch {
-            print("\(error.localizedDescription)")
-        }
-        
-    }
-    
-    enum Option: String {
-        case number = "Number Key 01"
-        case delete = "Delete Key 01"
-    }
-}
 
 struct ContentView: View {
+    @EnvironmentObject var sound: ViewModel
+    
     let effect: SoundManager
 //    @State var backgroundOn = true
     
 // Ver No. 2
 // ----------------------------------------------------------------
-//
-//    let deleteEffect = SoundEngine(fileName: "Delete Key 01")
-//    let keyEffect = SoundEngine(fileName: "Number Key 01")
+
+    let deleteEffect = SoundEngine(fileName: "Delete Key 01")
+    let keyEffect = SoundEngine(fileName: "Number Key 01")
     
 // Ver No. 1
 // ----------------------------------------------------------------
@@ -77,7 +56,9 @@ struct ContentView: View {
             }
             
             Button {
-                effect.play(option: .number)
+//                sound.play()
+//                effect.play()
+                keyEffect.play()
             } label: {
                 Text("Number!")
                     .padding()

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1605C06727BCDE120099E1CA /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605C06627BCDE120099E1CA /* SoundManager.swift */; };
+		1605C06927BCDEAA0099E1CA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1605C06827BCDEAA0099E1CA /* ViewModel.swift */; };
 		16D04A3327AF9FD4003E5ED9 /* SoundEffectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D04A3227AF9FD4003E5ED9 /* SoundEffectApp.swift */; };
 		16D04A3527AF9FD4003E5ED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D04A3427AF9FD4003E5ED9 /* ContentView.swift */; };
 		16D04A3727AF9FD6003E5ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D04A3627AF9FD6003E5ED9 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1605C06627BCDE120099E1CA /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		1605C06827BCDEAA0099E1CA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		16D04A2F27AF9FD4003E5ED9 /* SoundEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D04A3227AF9FD4003E5ED9 /* SoundEffectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectApp.swift; sourceTree = "<group>"; };
 		16D04A3427AF9FD4003E5ED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				16D04A4027AFA175003E5ED9 /* Resources */,
 				16D04A3227AF9FD4003E5ED9 /* SoundEffectApp.swift */,
 				16D04A4B27AFA918003E5ED9 /* SoundEngine.swift */,
+				1605C06627BCDE120099E1CA /* SoundManager.swift */,
+				1605C06827BCDEAA0099E1CA /* ViewModel.swift */,
 				16D04A3427AF9FD4003E5ED9 /* ContentView.swift */,
 				16D04A3627AF9FD6003E5ED9 /* Assets.xcassets */,
 				16D04A3827AF9FD6003E5ED9 /* Preview Content */,
@@ -168,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1605C06927BCDEAA0099E1CA /* ViewModel.swift in Sources */,
 				16D04A3527AF9FD4003E5ED9 /* ContentView.swift in Sources */,
+				1605C06727BCDE120099E1CA /* SoundManager.swift in Sources */,
 				16D04A3327AF9FD4003E5ED9 /* SoundEffectApp.swift in Sources */,
 				16D04A4C27AFA918003E5ED9 /* SoundEngine.swift in Sources */,
 			);

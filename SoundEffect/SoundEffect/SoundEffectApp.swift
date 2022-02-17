@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct SoundEffectApp: App {
     let effect = SoundManager.instance
+    @StateObject var sound = ViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView(effect: effect)
+                .environmentObject(sound)
         }
     }
 }

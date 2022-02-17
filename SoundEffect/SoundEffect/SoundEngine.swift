@@ -29,6 +29,8 @@ struct SoundEngine {
 //        if player.isPlaying {
 //            player.reset()
 //        }
+        if player.isPlaying { player.stop() }
+        
         player.scheduleFile(audioFile, at: nil)
         player.play()
     }
