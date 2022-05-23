@@ -8,20 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isOn: Bool = true
-    
+    @State var isZeroOn: Bool = true
+    @State var isEntered: Bool = true
+    @State var isDeleted: Bool = true
+
     var body: some View {
         VStack {
-            Text(isOn ? "Hello, world!" : "Hi")
+            Text(keyInputs())
                 .padding()
-            
+
             Button {
-                isOn.toggle()
+                isZeroOn.toggle()
             } label: {
                 Text("Toggle")
             }
-            .keyboardShortcut("t")
+            .keyboardShortcut(.init("0"), modifiers: [])
+
+            Button {
+                isEntered.toggle()
+            } label: {
+                Text("Toggle")
+            }
+            .keyboardShortcut(.return, modifiers: [])
         }
+    }
+    
+    func keyInputs() -> String {
+        let zero = isZeroOn ? "0, " : ""
+        let enter = isEntered ? "Enter, " : ""
+        let delete = isDeleted ? "Delete" : ""
+        
+        return "Key Inputs: " + zero + enter + delete
     }
 }
 
