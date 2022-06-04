@@ -1,0 +1,987 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C412FE92848A85D009BC8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C412FE82848A85D009BC8E5 /* AppDelegate.swift */; };
+		2C412FEB2848A85D009BC8E5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C412FEA2848A85D009BC8E5 /* GameViewController.swift */; };
+		2C412FEE2848A85D009BC8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FEC2848A85D009BC8E5 /* Main.storyboard */; };
+		2C412FF12848A85D009BC8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FEF2848A85D009BC8E5 /* LaunchScreen.storyboard */; };
+		2C412FF52848A85D009BC8E5 /* TwoDimensionalMotion.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2C412FF42848A85D009BC8E5 /* TwoDimensionalMotion.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C412FFB2848A85D009BC8E5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FF92848A85D009BC8E5 /* Interface.storyboard */; };
+		2C4130012848A85D009BC8E5 /* TwoDimensionalMotion Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C4130002848A85D009BC8E5 /* TwoDimensionalMotion Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C4130062848A85D009BC8E5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130052848A85D009BC8E5 /* InterfaceController.swift */; };
+		2C4130082848A85D009BC8E5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130072848A85D009BC8E5 /* ExtensionDelegate.swift */; };
+		2C4130112848A85D009BC8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130102848A85D009BC8E5 /* AppDelegate.swift */; };
+		2C4130132848A85D009BC8E5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130122848A85D009BC8E5 /* GameViewController.swift */; };
+		2C4130162848A85D009BC8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4130142848A85D009BC8E5 /* Main.storyboard */; };
+		2C4130192848A85D009BC8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4130172848A85D009BC8E5 /* LaunchScreen.storyboard */; };
+		2C4130212848A85D009BC8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130202848A85D009BC8E5 /* AppDelegate.swift */; };
+		2C4130232848A85D009BC8E5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4130222848A85D009BC8E5 /* GameViewController.swift */; };
+		2C4130262848A85D009BC8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4130242848A85D009BC8E5 /* Main.storyboard */; };
+		2C4130282848A85D009BC8E5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDD2848A85B009BC8E5 /* Actions.sks */; };
+		2C4130292848A85D009BC8E5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDD2848A85B009BC8E5 /* Actions.sks */; };
+		2C41302A2848A85D009BC8E5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDD2848A85B009BC8E5 /* Actions.sks */; };
+		2C41302B2848A85D009BC8E5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDE2848A85B009BC8E5 /* GameScene.sks */; };
+		2C41302C2848A85D009BC8E5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDE2848A85B009BC8E5 /* GameScene.sks */; };
+		2C41302D2848A85D009BC8E5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDE2848A85B009BC8E5 /* GameScene.sks */; };
+		2C41302E2848A85D009BC8E5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FDE2848A85B009BC8E5 /* GameScene.sks */; };
+		2C41302F2848A85D009BC8E5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C412FDF2848A85B009BC8E5 /* GameScene.swift */; };
+		2C4130302848A85D009BC8E5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C412FDF2848A85B009BC8E5 /* GameScene.swift */; };
+		2C4130312848A85D009BC8E5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C412FDF2848A85B009BC8E5 /* GameScene.swift */; };
+		2C4130322848A85D009BC8E5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C412FDF2848A85B009BC8E5 /* GameScene.swift */; };
+		2C4130332848A85D009BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FE02848A85D009BC8E5 /* Assets.xcassets */; };
+		2C4130342848A85D009BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FE02848A85D009BC8E5 /* Assets.xcassets */; };
+		2C4130352848A85D009BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FE02848A85D009BC8E5 /* Assets.xcassets */; };
+		2C4130362848A85D009BC8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C412FE02848A85D009BC8E5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C412FF62848A85D009BC8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C412FD82848A85B009BC8E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C412FF32848A85D009BC8E5;
+			remoteInfo = "TwoDimensionalMotion watchOS App";
+		};
+		2C4130022848A85D009BC8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C412FD82848A85B009BC8E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C412FFF2848A85D009BC8E5;
+			remoteInfo = "TwoDimensionalMotion watchOS App Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C41303C2848A85D009BC8E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C4130012848A85D009BC8E5 /* TwoDimensionalMotion Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C4130402848A85D009BC8E5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2C412FF52848A85D009BC8E5 /* TwoDimensionalMotion.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C412FDD2848A85B009BC8E5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		2C412FDE2848A85B009BC8E5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		2C412FDF2848A85B009BC8E5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		2C412FE02848A85D009BC8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C412FE52848A85D009BC8E5 /* TwoDimensionalMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDimensionalMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C412FE82848A85D009BC8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C412FEA2848A85D009BC8E5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2C412FED2848A85D009BC8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C412FF02848A85D009BC8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C412FF42848A85D009BC8E5 /* TwoDimensionalMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDimensionalMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C412FFA2848A85D009BC8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2C4130002848A85D009BC8E5 /* TwoDimensionalMotion Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TwoDimensionalMotion Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4130052848A85D009BC8E5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2C4130072848A85D009BC8E5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2C4130092848A85D009BC8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C41300E2848A85D009BC8E5 /* TwoDimensionalMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDimensionalMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4130102848A85D009BC8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C4130122848A85D009BC8E5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2C4130152848A85D009BC8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C4130182848A85D009BC8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C41301E2848A85D009BC8E5 /* TwoDimensionalMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoDimensionalMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4130202848A85D009BC8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C4130222848A85D009BC8E5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		2C4130252848A85D009BC8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C4130272848A85D009BC8E5 /* TwoDimensionalMotion_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwoDimensionalMotion_macOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C412FE22848A85D009BC8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C412FFD2848A85D009BC8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C41300B2848A85D009BC8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C41301B2848A85D009BC8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C412FD72848A85B009BC8E5 = {
+			isa = PBXGroup;
+			children = (
+				2C412FDC2848A85B009BC8E5 /* TwoDimensionalMotion Shared */,
+				2C412FE72848A85D009BC8E5 /* TwoDimensionalMotion iOS */,
+				2C412FF82848A85D009BC8E5 /* TwoDimensionalMotion watchOS App */,
+				2C4130042848A85D009BC8E5 /* TwoDimensionalMotion watchOS App Extension */,
+				2C41300F2848A85D009BC8E5 /* TwoDimensionalMotion tvOS */,
+				2C41301F2848A85D009BC8E5 /* TwoDimensionalMotion macOS */,
+				2C412FE62848A85D009BC8E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C412FDC2848A85B009BC8E5 /* TwoDimensionalMotion Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2C412FDD2848A85B009BC8E5 /* Actions.sks */,
+				2C412FDE2848A85B009BC8E5 /* GameScene.sks */,
+				2C412FDF2848A85B009BC8E5 /* GameScene.swift */,
+				2C412FE02848A85D009BC8E5 /* Assets.xcassets */,
+			);
+			path = "TwoDimensionalMotion Shared";
+			sourceTree = "<group>";
+		};
+		2C412FE62848A85D009BC8E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C412FE52848A85D009BC8E5 /* TwoDimensionalMotion.app */,
+				2C412FF42848A85D009BC8E5 /* TwoDimensionalMotion.app */,
+				2C4130002848A85D009BC8E5 /* TwoDimensionalMotion Extension.appex */,
+				2C41300E2848A85D009BC8E5 /* TwoDimensionalMotion.app */,
+				2C41301E2848A85D009BC8E5 /* TwoDimensionalMotion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C412FE72848A85D009BC8E5 /* TwoDimensionalMotion iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C412FE82848A85D009BC8E5 /* AppDelegate.swift */,
+				2C412FEA2848A85D009BC8E5 /* GameViewController.swift */,
+				2C412FEC2848A85D009BC8E5 /* Main.storyboard */,
+				2C412FEF2848A85D009BC8E5 /* LaunchScreen.storyboard */,
+			);
+			path = "TwoDimensionalMotion iOS";
+			sourceTree = "<group>";
+		};
+		2C412FF82848A85D009BC8E5 /* TwoDimensionalMotion watchOS App */ = {
+			isa = PBXGroup;
+			children = (
+				2C412FF92848A85D009BC8E5 /* Interface.storyboard */,
+			);
+			path = "TwoDimensionalMotion watchOS App";
+			sourceTree = "<group>";
+		};
+		2C4130042848A85D009BC8E5 /* TwoDimensionalMotion watchOS App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2C4130052848A85D009BC8E5 /* InterfaceController.swift */,
+				2C4130072848A85D009BC8E5 /* ExtensionDelegate.swift */,
+				2C4130092848A85D009BC8E5 /* Info.plist */,
+			);
+			path = "TwoDimensionalMotion watchOS App Extension";
+			sourceTree = "<group>";
+		};
+		2C41300F2848A85D009BC8E5 /* TwoDimensionalMotion tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C4130102848A85D009BC8E5 /* AppDelegate.swift */,
+				2C4130122848A85D009BC8E5 /* GameViewController.swift */,
+				2C4130142848A85D009BC8E5 /* Main.storyboard */,
+				2C4130172848A85D009BC8E5 /* LaunchScreen.storyboard */,
+			);
+			path = "TwoDimensionalMotion tvOS";
+			sourceTree = "<group>";
+		};
+		2C41301F2848A85D009BC8E5 /* TwoDimensionalMotion macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C4130202848A85D009BC8E5 /* AppDelegate.swift */,
+				2C4130222848A85D009BC8E5 /* GameViewController.swift */,
+				2C4130242848A85D009BC8E5 /* Main.storyboard */,
+				2C4130272848A85D009BC8E5 /* TwoDimensionalMotion_macOS.entitlements */,
+			);
+			path = "TwoDimensionalMotion macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C412FE42848A85D009BC8E5 /* TwoDimensionalMotion iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4130412848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion iOS" */;
+			buildPhases = (
+				2C412FE12848A85D009BC8E5 /* Sources */,
+				2C412FE22848A85D009BC8E5 /* Frameworks */,
+				2C412FE32848A85D009BC8E5 /* Resources */,
+				2C4130402848A85D009BC8E5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C412FF72848A85D009BC8E5 /* PBXTargetDependency */,
+			);
+			name = "TwoDimensionalMotion iOS";
+			productName = "TwoDimensionalMotion iOS";
+			productReference = 2C412FE52848A85D009BC8E5 /* TwoDimensionalMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C412FF32848A85D009BC8E5 /* TwoDimensionalMotion watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C41303D2848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion watchOS App" */;
+			buildPhases = (
+				2C412FF22848A85D009BC8E5 /* Resources */,
+				2C41303C2848A85D009BC8E5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C4130032848A85D009BC8E5 /* PBXTargetDependency */,
+			);
+			name = "TwoDimensionalMotion watchOS App";
+			productName = "TwoDimensionalMotion watchOS App";
+			productReference = 2C412FF42848A85D009BC8E5 /* TwoDimensionalMotion.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2C412FFF2848A85D009BC8E5 /* TwoDimensionalMotion watchOS App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4130392848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion watchOS App Extension" */;
+			buildPhases = (
+				2C412FFC2848A85D009BC8E5 /* Sources */,
+				2C412FFD2848A85D009BC8E5 /* Frameworks */,
+				2C412FFE2848A85D009BC8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwoDimensionalMotion watchOS App Extension";
+			productName = "TwoDimensionalMotion watchOS App Extension";
+			productReference = 2C4130002848A85D009BC8E5 /* TwoDimensionalMotion Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		2C41300D2848A85D009BC8E5 /* TwoDimensionalMotion tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4130442848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion tvOS" */;
+			buildPhases = (
+				2C41300A2848A85D009BC8E5 /* Sources */,
+				2C41300B2848A85D009BC8E5 /* Frameworks */,
+				2C41300C2848A85D009BC8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwoDimensionalMotion tvOS";
+			productName = "TwoDimensionalMotion tvOS";
+			productReference = 2C41300E2848A85D009BC8E5 /* TwoDimensionalMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C41301D2848A85D009BC8E5 /* TwoDimensionalMotion macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C4130472848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion macOS" */;
+			buildPhases = (
+				2C41301A2848A85D009BC8E5 /* Sources */,
+				2C41301B2848A85D009BC8E5 /* Frameworks */,
+				2C41301C2848A85D009BC8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwoDimensionalMotion macOS";
+			productName = "TwoDimensionalMotion macOS";
+			productReference = 2C41301E2848A85D009BC8E5 /* TwoDimensionalMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C412FD82848A85B009BC8E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					2C412FE42848A85D009BC8E5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					2C412FF32848A85D009BC8E5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					2C412FFF2848A85D009BC8E5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					2C41300D2848A85D009BC8E5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					2C41301D2848A85D009BC8E5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 2C412FDB2848A85B009BC8E5 /* Build configuration list for PBXProject "TwoDimensionalMotion" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C412FD72848A85B009BC8E5;
+			productRefGroup = 2C412FE62848A85D009BC8E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C412FE42848A85D009BC8E5 /* TwoDimensionalMotion iOS */,
+				2C412FF32848A85D009BC8E5 /* TwoDimensionalMotion watchOS App */,
+				2C412FFF2848A85D009BC8E5 /* TwoDimensionalMotion watchOS App Extension */,
+				2C41300D2848A85D009BC8E5 /* TwoDimensionalMotion tvOS */,
+				2C41301D2848A85D009BC8E5 /* TwoDimensionalMotion macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C412FE32848A85D009BC8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C41302B2848A85D009BC8E5 /* GameScene.sks in Resources */,
+				2C412FEE2848A85D009BC8E5 /* Main.storyboard in Resources */,
+				2C4130282848A85D009BC8E5 /* Actions.sks in Resources */,
+				2C412FF12848A85D009BC8E5 /* LaunchScreen.storyboard in Resources */,
+				2C4130332848A85D009BC8E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C412FF22848A85D009BC8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4130342848A85D009BC8E5 /* Assets.xcassets in Resources */,
+				2C412FFB2848A85D009BC8E5 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C412FFE2848A85D009BC8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C41302C2848A85D009BC8E5 /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C41300C2848A85D009BC8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C41302D2848A85D009BC8E5 /* GameScene.sks in Resources */,
+				2C4130162848A85D009BC8E5 /* Main.storyboard in Resources */,
+				2C4130292848A85D009BC8E5 /* Actions.sks in Resources */,
+				2C4130192848A85D009BC8E5 /* LaunchScreen.storyboard in Resources */,
+				2C4130352848A85D009BC8E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C41301C2848A85D009BC8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4130262848A85D009BC8E5 /* Main.storyboard in Resources */,
+				2C41302E2848A85D009BC8E5 /* GameScene.sks in Resources */,
+				2C4130362848A85D009BC8E5 /* Assets.xcassets in Resources */,
+				2C41302A2848A85D009BC8E5 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C412FE12848A85D009BC8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C41302F2848A85D009BC8E5 /* GameScene.swift in Sources */,
+				2C412FEB2848A85D009BC8E5 /* GameViewController.swift in Sources */,
+				2C412FE92848A85D009BC8E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C412FFC2848A85D009BC8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4130302848A85D009BC8E5 /* GameScene.swift in Sources */,
+				2C4130082848A85D009BC8E5 /* ExtensionDelegate.swift in Sources */,
+				2C4130062848A85D009BC8E5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C41300A2848A85D009BC8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4130312848A85D009BC8E5 /* GameScene.swift in Sources */,
+				2C4130132848A85D009BC8E5 /* GameViewController.swift in Sources */,
+				2C4130112848A85D009BC8E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C41301A2848A85D009BC8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4130322848A85D009BC8E5 /* GameScene.swift in Sources */,
+				2C4130232848A85D009BC8E5 /* GameViewController.swift in Sources */,
+				2C4130212848A85D009BC8E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C412FF72848A85D009BC8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C412FF32848A85D009BC8E5 /* TwoDimensionalMotion watchOS App */;
+			targetProxy = 2C412FF62848A85D009BC8E5 /* PBXContainerItemProxy */;
+		};
+		2C4130032848A85D009BC8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C412FFF2848A85D009BC8E5 /* TwoDimensionalMotion watchOS App Extension */;
+			targetProxy = 2C4130022848A85D009BC8E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C412FEC2848A85D009BC8E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C412FED2848A85D009BC8E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C412FEF2848A85D009BC8E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C412FF02848A85D009BC8E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C412FF92848A85D009BC8E5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C412FFA2848A85D009BC8E5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		2C4130142848A85D009BC8E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4130152848A85D009BC8E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C4130172848A85D009BC8E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4130182848A85D009BC8E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C4130242848A85D009BC8E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C4130252848A85D009BC8E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C4130372848A85D009BC8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C4130382848A85D009BC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2C41303A2848A85D009BC8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TwoDimensionalMotion watchOS App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TwoDimensionalMotion watchOS App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "TwoDimensionalMotion Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2C41303B2848A85D009BC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TwoDimensionalMotion watchOS App Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TwoDimensionalMotion watchOS App Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "TwoDimensionalMotion Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		2C41303E2848A85D009BC8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TwoDimensionalMotion_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = TwoDimensionalMotion;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.xho95.TwoDimensionalMotion;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion.watchkitapp;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		2C41303F2848A85D009BC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = TwoDimensionalMotion_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = TwoDimensionalMotion;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.xho95.TwoDimensionalMotion;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion.watchkitapp;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		2C4130422848A85D009BC8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C4130432848A85D009BC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C4130452848A85D009BC8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		2C4130462848A85D009BC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C4130482848A85D009BC8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TwoDimensionalMotion macOS/TwoDimensionalMotion_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C4130492848A85D009BC8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TwoDimensionalMotion macOS/TwoDimensionalMotion_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U792A794H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xho95.TwoDimensionalMotion;
+				PRODUCT_NAME = TwoDimensionalMotion;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C412FDB2848A85B009BC8E5 /* Build configuration list for PBXProject "TwoDimensionalMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4130372848A85D009BC8E5 /* Debug */,
+				2C4130382848A85D009BC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4130392848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion watchOS App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C41303A2848A85D009BC8E5 /* Debug */,
+				2C41303B2848A85D009BC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C41303D2848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C41303E2848A85D009BC8E5 /* Debug */,
+				2C41303F2848A85D009BC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4130412848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4130422848A85D009BC8E5 /* Debug */,
+				2C4130432848A85D009BC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4130442848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4130452848A85D009BC8E5 /* Debug */,
+				2C4130462848A85D009BC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C4130472848A85D009BC8E5 /* Build configuration list for PBXNativeTarget "TwoDimensionalMotion macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C4130482848A85D009BC8E5 /* Debug */,
+				2C4130492848A85D009BC8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C412FD82848A85B009BC8E5 /* Project object */;
+}

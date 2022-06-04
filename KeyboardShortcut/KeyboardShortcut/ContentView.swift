@@ -23,6 +23,7 @@ struct ContentView: View {
                 Text("Toggle")
             }
             .keyboardShortcut(.init("0"), modifiers: [])
+            .opacity(0)
 
             Button {
                 isEntered.toggle()
