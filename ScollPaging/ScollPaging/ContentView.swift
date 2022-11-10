@@ -13,8 +13,16 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             HorizontalPageView()
-                .tabItem { Label("Horizontal", systemImage: "circle") }
+                .tabItem { Label("Horizontal", systemImage: "arrow.left.and.right.square") }
+                .tag(0)
+            
+            ScrollPageView()
+                .tabItem { Label("Scroll", systemImage: "rectangle.portrait.arrowtriangle.2.outward") }
                 .tag(1)
+            
+            GesturePageView()
+                .tabItem { Label("Gesture", systemImage: "person.and.arrow.left.and.arrow.right") }
+                .tag(2)
         }
     }
 }

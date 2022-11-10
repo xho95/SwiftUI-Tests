@@ -12,7 +12,10 @@
 		2C69A780291C9A2F001B3108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C69A77F291C9A2F001B3108 /* Assets.xcassets */; };
 		2C69A783291C9A2F001B3108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C69A782291C9A2F001B3108 /* Preview Assets.xcassets */; };
 		2C69A78A291C9A93001B3108 /* HorizontalPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69A789291C9A93001B3108 /* HorizontalPageView.swift */; };
-		2C69A78C291C9BAF001B3108 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69A78B291C9BAF001B3108 /* PageView.swift */; };
+		2C69A78C291C9BAF001B3108 /* PageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69A78B291C9BAF001B3108 /* PageItemView.swift */; };
+		2C69A78E291CC074001B3108 /* ScrollPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69A78D291CC074001B3108 /* ScrollPageView.swift */; };
+		2C69A790291CCD9E001B3108 /* GesturePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69A78F291CCD9E001B3108 /* GesturePageView.swift */; };
+		2C69A792291CCFBA001B3108 /* HorizontalScrollModifier .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C69A791291CCFBA001B3108 /* HorizontalScrollModifier .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +25,10 @@
 		2C69A77F291C9A2F001B3108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C69A782291C9A2F001B3108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C69A789291C9A93001B3108 /* HorizontalPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPageView.swift; sourceTree = "<group>"; };
-		2C69A78B291C9BAF001B3108 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		2C69A78B291C9BAF001B3108 /* PageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItemView.swift; sourceTree = "<group>"; };
+		2C69A78D291CC074001B3108 /* ScrollPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPageView.swift; sourceTree = "<group>"; };
+		2C69A78F291CCD9E001B3108 /* GesturePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturePageView.swift; sourceTree = "<group>"; };
+		2C69A791291CCFBA001B3108 /* HorizontalScrollModifier .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HorizontalScrollModifier .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,10 @@
 				2C69A77B291C9A2E001B3108 /* ScollPagingApp.swift */,
 				2C69A77D291C9A2E001B3108 /* ContentView.swift */,
 				2C69A789291C9A93001B3108 /* HorizontalPageView.swift */,
-				2C69A78B291C9BAF001B3108 /* PageView.swift */,
+				2C69A78B291C9BAF001B3108 /* PageItemView.swift */,
+				2C69A78D291CC074001B3108 /* ScrollPageView.swift */,
+				2C69A78F291CCD9E001B3108 /* GesturePageView.swift */,
+				2C69A791291CCFBA001B3108 /* HorizontalScrollModifier .swift */,
 				2C69A77F291C9A2F001B3108 /* Assets.xcassets */,
 				2C69A781291C9A2F001B3108 /* Preview Content */,
 			);
@@ -144,9 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C69A77E291C9A2E001B3108 /* ContentView.swift in Sources */,
-				2C69A78C291C9BAF001B3108 /* PageView.swift in Sources */,
+				2C69A792291CCFBA001B3108 /* HorizontalScrollModifier .swift in Sources */,
+				2C69A78C291C9BAF001B3108 /* PageItemView.swift in Sources */,
 				2C69A78A291C9A93001B3108 /* HorizontalPageView.swift in Sources */,
 				2C69A77C291C9A2E001B3108 /* ScollPagingApp.swift in Sources */,
+				2C69A78E291CC074001B3108 /* ScrollPageView.swift in Sources */,
+				2C69A790291CCD9E001B3108 /* GesturePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  PageView.swift
+//  PageItemView.swift
 //  ScollPaging
 //
 //  Created by Min Ho Kim on 2022/11/10.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PageView: View {
+struct PageItemView: View {
     var body: some View {
         TabView {
             ForEach(0..<10) { i in
@@ -20,12 +20,12 @@ struct PageView: View {
             .padding(.all, 10)
         }
         .frame(width: UIScreen.main.bounds.width, height: 200)
-        .tabViewStyle(.page)
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
 }
 
-struct PageView_Previews: PreviewProvider {
+struct PageItemView_Previews: PreviewProvider {
     static var previews: some View {
-        PageView()
+        PageItemView()
     }
 }

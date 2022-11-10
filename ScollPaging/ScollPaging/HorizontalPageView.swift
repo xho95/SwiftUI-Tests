@@ -10,7 +10,7 @@ import SwiftUI
 struct HorizontalPageView: View {
     var body: some View {
         LazyHStack {
-            PageView()
+            PageItemView()
         }
     }
 }
