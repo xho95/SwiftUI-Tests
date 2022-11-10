@@ -12,11 +12,11 @@ struct ContentView: View {
         ZStack {
             Circle()
                 .fill(Color.blue)
-                .frame(width: 12, height: 12)
+                .frame(width: 50, height: 50)
                 .modifier(ParticleModifier())
                 .offset(x: -100, y: -50)
             
-            Circle()
+            Rectangle()
                 .fill(Color.red)
                 .frame(width: 12, height: 12)
                 .modifier(ParticleModifier())

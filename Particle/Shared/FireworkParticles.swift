@@ -18,6 +18,7 @@ struct FireworkParticles: GeometryEffect {
         set { time = newValue }
     }
     
+    // Apply the translation according to the time
     func effectValue(size: CGSize) -> ProjectionTransform {
         let xTranslation = speed * cos(Θ) * time
         let yTranslation = speed * sin(Θ) * time

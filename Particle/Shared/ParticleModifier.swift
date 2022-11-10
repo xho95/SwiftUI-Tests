@@ -15,7 +15,7 @@ struct ParticleModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         ZStack {
-            ForEach(0..<2, id: \.self) { index in
+            ForEach(0..<100, id: \.self) { index in
                 content
                     .hueRotation(Angle(degrees: time * 80))
                     .scaleEffect(scale)
@@ -24,6 +24,9 @@ struct ParticleModifier: ViewModifier {
             }
         }
         .onAppear {
+            // Here's the point at which the time and the scale chages.
+            // time: 0.0 --> duration
+            // sclae: 0.1 --> 1.0
             withAnimation(.easeOut(duration: duration)) {
                 self.time = duration
                 self.scale = 1.0
