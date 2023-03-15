@@ -11,6 +11,8 @@
 		2CAB216029BCDAFA00DA95F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB215F29BCDAFA00DA95F5 /* ContentView.swift */; };
 		2CAB216229BCDAFB00DA95F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB216129BCDAFB00DA95F5 /* Assets.xcassets */; };
 		2CAB216629BCDAFB00DA95F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CAB216529BCDAFB00DA95F5 /* Preview Assets.xcassets */; };
+		2CAB216F29BCDC8700DA95F5 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB216E29BCDC8700DA95F5 /* MapView.swift */; };
+		2CAB217129BCDCFE00DA95F5 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAB217029BCDCFE00DA95F5 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		2CAB216129BCDAFB00DA95F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CAB216329BCDAFB00DA95F5 /* MKMapTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKMapTest.entitlements; sourceTree = "<group>"; };
 		2CAB216529BCDAFB00DA95F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CAB216E29BCDC8700DA95F5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2CAB217029BCDCFE00DA95F5 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				2CAB215D29BCDAFA00DA95F5 /* MKMapTestApp.swift */,
-				2CAB215F29BCDAFA00DA95F5 /* ContentView.swift */,
+				2CAB216C29BCDC3700DA95F5 /* Model */,
+				2CAB216D29BCDC7800DA95F5 /* View */,
 				2CAB216129BCDAFB00DA95F5 /* Assets.xcassets */,
 				2CAB216329BCDAFB00DA95F5 /* MKMapTest.entitlements */,
 				2CAB216429BCDAFB00DA95F5 /* Preview Content */,
@@ -67,6 +72,23 @@
 				2CAB216529BCDAFB00DA95F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CAB216C29BCDC3700DA95F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB217029BCDCFE00DA95F5 /* LocationViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CAB216D29BCDC7800DA95F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CAB216E29BCDC8700DA95F5 /* MapView.swift */,
+				2CAB215F29BCDAFA00DA95F5 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CAB216029BCDAFA00DA95F5 /* ContentView.swift in Sources */,
+				2CAB216F29BCDC8700DA95F5 /* MapView.swift in Sources */,
 				2CAB215E29BCDAFA00DA95F5 /* MKMapTestApp.swift in Sources */,
+				2CAB217129BCDCFE00DA95F5 /* LocationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
