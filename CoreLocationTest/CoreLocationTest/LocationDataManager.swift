@@ -14,7 +14,11 @@ import CoreLocation
 class LocationDataManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus?
     
-    var locationManager = CLLocationManager()
+    var coordinate: CLLocationCoordinate2D? {
+        locationManager.location?.coordinate
+    }
+
+    private var locationManager = CLLocationManager()
     
     override init() {
         super.init()

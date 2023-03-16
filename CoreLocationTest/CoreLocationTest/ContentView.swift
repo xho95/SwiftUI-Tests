@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var locationDataManager = LocationDataManager()
+    @EnvironmentObject var location: LocationDataManager
+
+//    @StateObject var locationDataManager = LocationDataManager()
     
     var body: some View {
         VStack {
-            switch locationDataManager.locationManager.authorizationStatus {
+            switch location.authorizationStatus {
+//                switch location.locationManager.authorizationStatus {
             case .authorizedWhenInUse:
                 Text("Your current location is:")
-                Text("Latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
-                Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
+                Text("Latitude: \(location.coordinate?.latitude.description ?? "Error loading")")
+                Text("Longitude: \(location.coordinate?.longitude.description ?? "Error loading")")
             case .restricted, .denied:
                 Text("Current location data was restricted or denied.")
             case .notDetermined:
