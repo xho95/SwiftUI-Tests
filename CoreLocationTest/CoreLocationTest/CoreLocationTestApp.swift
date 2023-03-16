@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct CoreLocationTestApp: App {
-    @StateObject private var location = LocationDataManager()
+    @StateObject private var locationManager = LocationDataManager()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(location)
+                .environmentObject(locationManager)
         }
     }
 }
